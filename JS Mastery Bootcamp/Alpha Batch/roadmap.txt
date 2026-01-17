@@ -1,0 +1,22 @@
+// Basic JS
+// Variable
+// data-type
+// Operators
+// conditional statments (if | else | ele if | switch case)
+// control flow statements (for, while, do-while, forEach, for in, for of)
+//  Functions in JS
+// Arrays | Objects | Strings
+// Event Handling
+// DOM - Document Object Model
+// OOPS
+
+
+// ad. JS
+// Rest and Spread Operators
+// Template literal Object
+// API's 
+// Promises | Aysnc & Sync JS
+// Fetch Method 
+// Async | Await
+// Error Handling - Try & Catch
+

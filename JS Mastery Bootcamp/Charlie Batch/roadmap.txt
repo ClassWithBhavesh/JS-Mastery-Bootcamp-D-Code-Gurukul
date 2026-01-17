@@ -1,0 +1,21 @@
+// basic | fundamentals of JS -
+// variable
+// data-type
+// operators
+// conditional statements
+// control-flow statements
+// Functions
+// Arrays | Objects | Strings
+// Event Handling
+// DOM - Document Object Model
+
+
+// ad. Js - 
+// Rest & Spread operators 
+// Template Literals | Ternary Operator
+// De-Structuring of Array and Objects
+// Promises | Async & Sync JS
+// Fetch method in JS (.then() & .catch())
+// Async & Await
+// Error Handling - (try and catch block)
+

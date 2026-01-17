@@ -1,0 +1,20 @@
+
+// variable - 
+// data-type -
+// Operators in JS
+// conditional statements (if | else | else if | swtich case)
+// control-flow statements (for, while, do-while, forEach, for in, for of)
+// Functions
+// Arrays | Objects | Strings
+// Event handling
+// DOM - Document Object Model
+
+// Ad. JS
+// Rest & Spread Operators | Ternary Operator
+// Template Literals
+// Destructuring of Arrays and objects
+// Promises | Async & Sync JS
+// Fetch methods | .then()  .catch()
+// async & await 
+// Error Handling - Try & Catch
+
