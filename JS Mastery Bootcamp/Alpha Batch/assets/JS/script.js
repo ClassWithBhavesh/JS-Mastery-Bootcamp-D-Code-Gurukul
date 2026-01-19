@@ -1,17 +1,17 @@
-// Variable in JS - 
+// Variable in JS -
 // they are like containers which will store some amount of data or value
 // entity which is able to change anytime or anywhere
 
-// declaration of variable in JS - 
+// declaration of variable in JS -
 // 1. Declaration basis -
-// var   - 
+// var   -
 // var num = 458;
 // // document.write(num)
 // console.log(num);
 // var num = 54;
 // console.log(num);
 
-// // let   - 
+// // let   -
 // let num1 = 98;
 // console.log(num1);
 // // let num1 = 62;
@@ -23,21 +23,16 @@
 // // const num2 = 85;
 // // console.log(num2);
 
-
-
-
 // Data-Types in JS -
 
 // let num = undefined;
 // console.log(num);
 // console.log(typeof(num));
 
-
-// typeof(Arr)ays in JS - 
+// typeof(Arr)ays in JS -
 // let arr = [10,20,303,40,50,60];
 // console.log(arr);
 // console.log(typeof(arr));
-
 
 // objects in js -
 // let empObj = {
@@ -48,10 +43,6 @@
 // console.log(empObj);
 // console.log(typeof(empObj));
 
-
-
-
-
 // let count = 178;
 // console.log(count);
 // let copiedCount = count;
@@ -59,7 +50,6 @@
 // copiedCount = copiedCount + 10;
 // console.log(copiedCount);
 // console.log(count);
-
 
 // let arr = [10,20,30,40];
 // // console.log(arr);
@@ -69,9 +59,7 @@
 // console.log(copiedArr)
 // console.log(arr)
 
-
-
-// Operators - 
+// Operators -
 // 1. Airthmatic - +, -, *, /, %, **
 
 // let num1 = 10;
@@ -82,7 +70,6 @@
 // console.log(num1 / num2);
 // console.log(num1 % num2);
 // console.log(num1 ** num1);
-
 
 // 2. Assignment Operators - +=, -=, *=, /=, ++, --, %=, **=
 
@@ -95,10 +82,6 @@
 // num2 += num1;   // num2 = num2 + num1
 // console.log("after assignment - " + num1);
 // console.log("after assignment - " + num2);
-
-
-
-
 
 // Comparison Operators -   <, >, <=, >=, ==, ===, !=, !==
 // let num1 = '45';
@@ -118,18 +101,13 @@
 // console.log(num1 != num2);
 // console.log(num1 !== num2);
 
-
-
-
-
-// Logical Operators - 
+// Logical Operators -
 // AND - &&
 // OR  - ||
 // NOT - !
 
-
-// let num1 = 101; 
-// let num2 = 20.254896; 
+// let num1 = 101;
+// let num2 = 20.254896;
 // let num3 = 30;
 
 // if(!(num1 > num2 && num1 > num3)){
@@ -145,15 +123,11 @@
 //     console.log("All Number are Equal!");
 // }
 
-
-
-
-
-// nested if - 
-// let num1 = 10; 
-// let num2 = 2; 
-// let num3 = 30; 
-// let num4 = 14; 
+// nested if -
+// let num1 = 10;
+// let num2 = 2;
+// let num3 = 30;
+// let num4 = 14;
 
 // if(num1 < num2 && num1 < num3 && num1 < num4){
 //     if(num2 < num3 && num2 < num4){
@@ -248,24 +222,16 @@
 //     }
 // }
 
-
-
-
-
-
-// Dialogue Boxes - 
+// Dialogue Boxes -
 // prompt - user input lene ke liye
-// confirm - user se confirmation ke liye 
+// confirm - user se confirmation ke liye
 // alert - to display some message or warning on to the browser
-
 
 // user input - prompt -
 // to type cast the user input - Number, parseInt, parseFloat
 // let userInput = Number(prompt("Enter a number : "));
 // console.log(userInput);
 // console.log(typeof(userInput));
-
-
 
 // /confirmation ke liye - confirm box -
 // let userConf = confirm("wants to sent you a notification!");
@@ -277,9 +243,7 @@
 //     alert("thanks, for the feedback!");
 // }
 
-
-
-// Switch Case - 
+// Switch Case -
 // let day = 'sunday';
 
 // switch(day){
@@ -305,20 +269,13 @@
 //         console.log("today is saturday!");
 //         break;
 //     default:
-//         console.log("Invalid Day!")       
+//         console.log("Invalid Day!")
 // }
 
-
-
-
-
-
-
-// control-flow statements - 
-// while - 
+// control-flow statements -
+// while -
 // do-while
 // for
-
 
 // 1. while -
 // let num = 1;
@@ -327,8 +284,7 @@
 //     num++;
 //  }
 
-
-// do-while - 
+// do-while -
 
 // let num = 1;
 // do{
@@ -336,10 +292,146 @@
 //     num++;
 // }while(num < 11)
 
+// for -
+
+// for(let num = 1; num < 11; num++){
+//     console.log(num);
+// }
+
+// function -
+
+// function funcName(){   // declaration of function
+
+// }
+
+// funcName();    // function calling
+
+// let num1 = 96;
+// let num2 = 14;
+// let result = num1 + num2;
+// console.log(result);.
+
+// Standard Fucntion -
+// function sum(){
+//     let num1 = 36;
+//     let num2 = 145;
+//     let result = num1 + num2;
+//     console.log(result);
+// }
+
+// sum();
+// sum();
+// sum();
+// sum();
+// sum();
+// sum();
+// sum();
+
+// parametric function -
+// function sum(num1, num2){
+//     let result = num1 + num2;
+//     console.log(result);
+// }
+
+// sum(154, 254);
+// sum(47, 52);
+// sum(12, 14);
+// sum(74, 52);
+// sum(0, 0);
+
+// function funcName(para1, para2, ....paraN){
+//     let result = para1 + para2 + ... + paraN;
+//     return result;
+// }
+
+// let student_name = 'Anas';
+// let mMarks = 58;
+// let enMarks = 85;
+// let hnMarks = 18;
+// let sstMarks = 68;
+// let scMarks = 75;
+
+// function obtMarks(mMarks, hnMakrs, enMarks, sstMarks, scMarks) {
+//   let obtMarks = mMarks + hnMakrs + enMarks + sstMarks + scMarks;
+//   return obtMarks;
+// }
+
+// let obMarks = obtMarks(50,50,50,50,50);
 
 
-// for - 
+// function percentage(obtMarks, tMarks){
+//     let percent = (obtMarks / tMarks) * 100;
+//     return percent;
+// }
 
-for(let num = 1; num < 11; num++){
-    console.log(num);
+// let  stdPer = percentage(obMarks, 500);
+
+
+// function result(stdName, obtMarks, tMarks, percentage){
+//     if(percentage > 80 && percentage <= 100){
+//         console.log(`${stdName} has got ${obtMarks} out of ${tMarks}, scored ${percentage}% and got 'A' Grade`);
+//     }
+//     else if(percentage > 60 && percentage <= 80){
+//         console.log(`${stdName} has got ${obtMarks} out of ${tMarks}, scored ${percentage}% and got 'B' Grade`);
+//     }
+//     else if(percentage > 40 && percentage <= 60){
+//         console.log(`${stdName} has got ${obtMarks} out of ${tMarks}, scored ${percentage}% and got 'C' Grade`);
+//     }
+//     else if(percentage >= 33 && percentage <= 40){
+//         console.log(`${stdName} has got ${obtMarks} out of ${tMarks}, scored ${percentage}% and got 'D' Grade`);
+//     }
+//     else{
+//         console.log(`${stdName} has got ${obtMarks} out of ${tMarks}, scored ${percentage}% and unfortunately got failed! better luck next time!`);
+//     }
+// }
+
+// result(student_name, obMarks, 500, stdPer);
+
+
+
+
+
+
+
+// Array - 
+let arr = [10,20,30,540,60,75];
+console.log(arr);
+
+console.log(typeof(arr));
+// console.log(arr[0]);
+// console.log(arr[1]);
+// console.log(arr[2]);
+// console.log(arr[3]);
+// console.log(arr[4]);
+// console.log(arr[5]);
+
+// for(let i = 0; i <= arr.length - 1; i++){
+//     console.log(arr[i]);
+// }
+
+// for(let i = 0; arr[i] == undefined; i++){
+//     console.log(arr[i]);
+// }
+
+
+let obj = {
+    perName: "Mahipal",
+    perAge: 150,
+    perDOB: "01/01/2001",
+    print: function(){
+        console.log(`${this.perName}`);
+    }
+}
+
+// console.log(objectName.key);
+// console.log(obj.perName);
+// console.log(obj.perAge);
+// console.log(obj.perDOB);
+
+// obj.print();
+
+
+
+for(let key in obj){
+    console.log(obj[key]);
 }
