@@ -390,9 +390,314 @@ let obj = {
     animalType: 'White'
 }
 
-for(let key in obj){
-    console.log(obj[key]);
-}
+// Traditional method to iterate an object using for loop -
+// console.log(Object.keys(obj));
+
+// for(let key = 0; key < Object.keys(obj).length; key++){
+//     console.log(Object.keys(obj)[key] + " : " + obj[Object.keys(obj)[key]]);
+// }
+
+
+// for(let key in obj){
+//     console.log(`${key} : ${obj[key]}`);
+// }
+
+
+
+// modern for loop for object iteration -
+// for(let key in obj){
+//     console.log(obj[key]);
+// }
 
 // console.log(obj.animalName);
 // console.log(obj.animalAge);
+
+
+
+
+// Array methods - 
+
+// // 1. .sort() :
+// var arr = ["amrit","arpit","Neha","sita","Pramod","isha"];
+// // let arr = [1,4,1,52,6,3,9,5,8,96,2];
+// document.write(arr + "<br><br>");
+// arr.sort(); 
+// document.write(arr + "<br>");
+
+
+// // 2. .reverse() :
+
+// let ary = ["arpit", "sakshi", "titu", 10];
+// document.write(ary +"<br><br>")
+// // ary.reverse();
+// ary.sort().reverse();
+// document.write(ary);
+
+
+// // 3. Pop :
+
+// var arr = ["arpit", "shikha", "aman", "priya"];
+// document.write(arr +"<br><br>");
+// arr.pop();
+// document.write(arr);
+
+
+
+
+
+// // 4. Push :
+
+// var arr = ["arpit", "shikha", "aman", "priya"];
+// document.write(arr, "<br><br>");
+// console.log(arr, "<br><br>");
+// arr.push(["rahul", 45, true, "undefined"]);
+// document.write(arr);
+// console.log(arr, "<br><br>");
+
+
+
+// // 5. shift :
+
+// var arr = ["arpit", "shikha", "aman", "priya"];
+// document.write(arr, "<br><br>");
+// arr.shift();
+// arr.shift();
+// document.write(arr);
+
+
+
+
+// // 6. unShift :
+
+// var arr = ["arpit", "shikha", "aman", "priya"];
+// document.write(arr, "<br><br>");
+// arr.unshift("shalini", "shobha");
+// document.write(arr);
+
+
+
+// 7. concat :
+// var a = [10,20,"Rahul"];
+// document.write(a +"<br><br>");
+// console.log(a);
+// var b = a.concat("sanjay",10,50);
+// console.log(b);
+// document.write(b, "<br>");
+// document.write(a);
+// let c = a.concat(b);
+// console.log(c);
+// let e = a.concat(a, b, c);
+// console.log(e);
+
+
+
+// // 8. Join :
+
+// var a = [10,50,"Rahul","shikha"];
+// // var b = ["shobha", "geeta", "sita"];
+// var c = a.join(" ");
+// document.write(c);
+// console.log(typeof(c));
+
+
+
+
+
+// // 9. slice :
+
+// var h = [10, 20, 45, 30, 40];
+// document.write(h +"<br><br>");
+// var b = h.slice(1, 4);
+// // b.pop();
+// document.write(b +"<br><br>");
+// document.write(h);
+
+
+// // 10. Splice :
+
+// var a = ["Rahul", 50, 80, 95, 60];
+// document.write(a +"<br><br>");
+// // var c = a.splice(index, how many delete, new value);
+// a.splice(2, 0, "Aman", 10);
+// document.write(a + "<br><br><br>");
+
+
+
+
+// // 12. isArray : 
+
+// var arr = [10, 50 ,40 ,"Sahil"];
+
+// if(Array.isArray(arr)){
+//     document.write("Yess, this is an array.")
+// }else
+// {
+//     document.write("No, This not an array")
+// }
+
+
+
+
+// // 13. indexOf :
+
+// var b = [10, 20, 45, 30, 20, 45, 54, 20, 45];
+// var a = b.indexOf(20, 5);
+// document.write(a);
+// var a = b.indexOf(search  , start);
+
+
+
+// // 14. lastIndexOf : 
+
+// var g = ["Str", 30, 50, 45, 50, 45, 50,true];
+// var h = g.lastIndexOf(50, 3); // g.lastIndexOf(seacrh item)
+// document.write(h);
+
+
+
+
+// // 15. Includes :
+
+// var ary = ["Sagar", "Atul", "Sanjay"];
+// var h = ary.includes("Sagar", "Atul");
+// document.write(h + "<br><br><br><br>");
+
+
+
+
+// // 16. Some :
+// var age = [10, 50, 18];
+// document.write(age + "<br><br>");
+// var check = age.some((age) => {
+//     return age >= 18;
+// });
+// var check = age.some(function (age){
+//     return age >= 18;
+// });
+
+// let ages = (age) => {
+//     return age >= 18;
+// }
+
+// var check = age.some(ages);
+// document.write(check + "<br><br>");
+
+
+
+// function ages (age){
+//     return age >= 18;
+// }
+
+
+// function ages(n){
+//     return n > 18;
+// }
+
+
+// function (num){
+//     return num > 18;
+// }
+
+
+
+
+
+// // 16. Every : 
+
+// var k = [20, 50, 80];
+// document.write(k + "<br><br><br>");
+// var y = k.every(ages);
+// document.write(y);
+
+
+
+
+
+
+// // 18. Find :
+// var p = [10, 2, 55, 19, 50];
+// document.write(p + "<br><br><br>");
+// var l = p.find(ages);
+// document.write(l);
+
+// function ages(p){
+//     return p >= 20;
+// }
+
+// 19. FindIndex : 
+// let q = [10, 15, 14, 50];
+// document.write(q + "<br><br><br>");
+// var r = q.findIndex(ages);
+// document.write(r);
+
+// function ages(q){
+//     return q >= 18;
+// }
+
+
+
+
+// // 20. Filter :
+
+// var a = [10,12,15,20,45,5,70];
+// document.write(a + "<br><br>");
+// var b = a.filter((ages) => {
+//     return ages < 18;
+// });
+// document.write(b + "<br>");
+
+// function ages(a){
+//     return a >= 40
+// }
+
+
+
+
+// // 21. toString : 
+
+// var t = ["Rahul", 50, 48, "Sanjeev"];
+// console.log(t);
+// document.write(t + "<br><br><br>")
+// var str = t.toString();
+// document.write(str);
+// console.log(typeof(str));
+
+
+// forEach - 
+// // 22. Array forEach Loop :
+
+// let ary = ["Neha", 50, true, "Saddam"];
+// ary.forEach(function(val, i){
+//     document.write(i + " : " + val + "<br>");
+// })
+
+// let ele = ary.forEach((value, ind) => {
+//     document.write(ind + " : " + value + "<br>");
+// })
+
+// document.write(ele);
+
+// for(let i = 0; i < ary.length; i++){
+//     document.write( i + "-" + ary[i] + "<br>");
+// }
+
+
+
+// 23. .map() : 
+
+// let ab = ary.map((value, ind) => {
+//     return value + 10;
+// })
+
+// document.write(ab);
+
+
+
+// 24. .reduce() : 
+// let arr = [40,50,80,20,90,30,];
+// // document.write(arr);
+// let result = arr.reduce((acc, curr) => {
+//     return acc + curr;
+// })
+
+// document.write(result);
