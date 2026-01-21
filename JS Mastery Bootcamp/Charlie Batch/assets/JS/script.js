@@ -442,7 +442,7 @@
 
 
 // Array in JavaScript - 
-let arr = [10,20,30,50,9,60];
+// let arr = [10,20,30,50,9,60];
 // console.log(arr[0]);
 // console.log(arr[1]);
 // console.log(arr[2]);
@@ -463,11 +463,11 @@ let arr = [10,20,30,50,9,60];
 
 
 // Objects in JavaScript -
-let obj = {
-    lapName: "Vivobook",
-    lapPrice: 80000,
-    lapPrcoess: "i5"
-}
+// let obj = {
+//     lapName: "Vivobook",
+//     lapPrice: 80000,
+//     lapPrcoess: "i5"
+// }
 
 // console.log(obj.lapName);
 // console.log(obj.lapPrcoess);
@@ -477,9 +477,312 @@ let obj = {
 //     console.log(`${Object.keys(obj)[key]} : ${obj[Object.keys(obj)[key]]}`)
 // }
 
-for(let key in obj){
-    console.log(`${key} : ${obj[key]}`)
-}
+// for(let key in obj){
+//     console.log(`${key} : ${obj[key]}`)
+// }
 
 // console.log(obj[Object.keys(obj)[2]]);
 
+
+
+
+
+// 
+
+// let userInput = Number(prompt("Enter a number - "));
+// let temp = userInput;
+// let count = 0;
+
+// while(temp > 0){
+//     temp = parseInt(temp/10);
+//     count++;
+// }
+// temp = userInput;
+// let num = 0;
+
+// for(let i = 1; i <= count; i++){
+//     let splitValue = temp%10;
+//     num += splitValue ** count;
+//     temp = parseInt(temp/10);
+// }
+
+// if(num == userInput){
+//     console.log(`${userInput} is a armstrong numebER!`);
+// }else{
+//     console.log(`${userInput} is not a armstrong numebER!`);
+// }
+
+
+
+
+
+
+
+
+// Array Methods - 
+
+// // 1. Sort :
+
+// var arr = ["amrit","arpit","Neha","sita","Pramod","isha"];
+// let arr = [1,4,1,52,6,3,9,5,8,96,2];
+// document.write(arr + "<br><br>");
+// arr.sort(); 
+// arrName.sort().reverse();
+// document.write(arr + "<br>");
+
+
+
+// // 2. .reverse() :
+
+// let ary = ["arpit", "sakshi", "titu", 10];
+// document.write(ary +"<br><br>")
+// ary.reverse();
+// // ary.sort().reverse();
+// document.write(ary);
+
+
+
+
+// // 3. Pop :
+
+// var arr = ["arpit", "shikha", "aman", "priya"];
+// document.write(arr +"<br><br>");
+// arr.pop();
+// document.write(arr);
+
+
+
+// // 4. Push :
+
+// var arr = ["arpit", "shikha", "aman", "priya"];
+// console.log(arr, "<br><br>");
+// document.write(arr, "<br><br>");
+// arr.push(["rahul", "Shobit", "Shobha"]);
+// document.write(arr, "<br><br>");
+// console.log(arr);
+
+
+
+
+// // 5. shift :
+
+// var arr = ["arpit", "shikha", "aman", "priya"];
+// document.write(arr, "<br><br>");
+// arr.shift();
+// // arr.shift();
+// document.write(arr);
+
+
+
+
+// // 6. unShift :
+
+// var arr = ["arpit", "shikha", "aman", "priya"];
+// document.write(arr, "<br><br>");
+// arr.unshift("shalini", "shobha");
+// document.write(arr);
+
+
+
+// 7. concat :
+// var a = [10,20,"Rahul"];
+// document.write(a +"<br><br>");
+// console.log(a);
+// var b = a.concat("sanjay",10,50);
+// console.log(b);
+// document.write(b);
+// let c = a.concat(b);
+// console.log(c);
+// let e = a.concat(a, b, c);
+// console.log(e);
+
+
+
+// // 8. Join :
+
+// var a = [10,50,"Rahul","shikha"];
+// // var b = ["shobha", "geeta", "sita"];
+// var c = a.join(",");
+// document.write(c, "<br>");
+// document.write(typeof(c));
+
+
+
+// // 10. slice :
+
+// var h = [10, 20, 45, 30, 40];
+// document.write(h +"<br><br>");
+// var b = h.slice(1, 4);
+// document.write(b +"<br><br>");
+// document.write(h);
+
+
+
+
+// // 11. Splice :
+
+// var a = ["Rahul", 50, 80, 95, 60];
+// document.write(a +"<br><br>");
+// // var c = a.splice(index, how many delete, new value);
+// a.splice(3, 1, "Aman", 10);
+// document.write(a + "<br><br><br>");
+
+
+
+// // 12. isArray : 
+
+// var arr = [10, 50 ,40 ,"Sahil"];
+// if(Array.isArray(arr)){
+//     document.write("Yess, this is an array.")
+// }else{
+//     document.write("No, This not an array")
+// }
+
+
+
+
+// // 13. indexOf :
+
+// var b = [10, 20, 45, 30, 20, 45, 54, 45];
+// var a = b.indexOf(20, 5);
+// document.write(a);
+// var a = b.indexOf(search  , start);
+
+
+
+
+// // 14. lastIndexOf : 
+
+// var g = ["Str", 30, 50, 45, 50, 45, 50,true];
+// var h = g.lastIndexOf(50, 5); // g.lastIndexOf(seacrh item)
+// document.write(h);
+
+
+
+
+// // 15. Includes :
+
+// var ary = ["Sagar", "Atul", "Sanjay"];
+// var h = ary.includes("Atul");
+// document.write(h + "<br><br><br><br>");
+
+
+
+
+// let ages = (age) => {   // Fat-Arrow Function (Arrow-Functions) | Function Expression
+//     return age >= 18;
+// }
+
+// // 16. Some :
+// var age = [10, 50, 18];
+// document.write(age + "<br><br>");
+// // var check = age.some(ages)
+// // var check = age.some(function (age){
+// //     return age >= 18;
+// // });
+// let check = age.some((age) => {
+//     return age >= 18;
+// });
+// document.write(check);
+
+
+
+// function ages(age){
+//     return age > 18;
+// }
+
+
+
+// // 17. Every : 
+
+// var k = [20, 50, 80];
+// document.write(k + "<br><br><br>");
+// var y = k.every(ages);
+// document.write(y);
+
+
+
+
+// // 18. Find :
+// var p = [10, 22, 55, 19, 50];
+// document.write(p + "<br><br><br>");
+// var l = p.find(ages);
+// document.write(l);
+
+
+
+// 19. FindIndex : 
+// let q = [10, 15, 18, 50];
+// document.write(q + "<br><br><br>");
+// var r = q.findIndex(ages);
+// document.write(r);
+
+
+
+
+
+// .filter() :
+
+// var a = [10,12,15,20,45,5,70];
+// document.write(a + "<br><br>");
+// var b = a.filter(ages);
+// document.write(b + "<br>");
+
+// function ages(a){
+//     return a % 2 == 0;
+// }
+
+
+
+
+// // 21. toString : 
+
+// var t = ["Rahul", 50, 48, "Sanjeev"];
+// console.log(t);
+// document.write(t + "<br><br><br>")
+// document.write(typeof(t) + "<br><br><br>");
+// var str = t.toString();
+// document.write(str + "<br><br><br>");
+// document.write(typeof(str));
+
+
+
+
+// 22. .forEach() :
+
+// let ary = ["Neha", 50, true, "Saddam"];
+// let a = ary.forEach(function(val, i){
+//     return val + 20;
+// })
+
+// ary.forEach((val, i) => {
+//     document.write(i + " : " + val + "<br>");
+// })
+
+// for(let i = 0; i < ary.length; i++){
+//     document.write( i + "-" + ary[i] + "<br>");
+// }
+
+
+
+// 23. .map() - 
+// let arr = [10,20,30,40,50,60];
+// let b = arr.map((val, ind) => {
+//     return val + 10;
+// })
+
+
+
+// console.log(a);
+// console.log(b);
+
+
+
+// 24. .reduce() : 
+// let arr = [10,20,30,50,60,60];
+
+// let result = arr.reduce((acc, curr) => {
+//     return acc * curr;
+// })
+
+// console.log(result);
