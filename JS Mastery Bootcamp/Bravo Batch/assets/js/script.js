@@ -701,3 +701,308 @@ let obj = {
 // })
 
 // document.write(result);
+
+
+
+
+
+
+
+
+
+
+
+// String Methods -
+
+// // 1. Length :
+// var str = "This is a JavaScript Tutorial.";
+// var l = str.length;
+// document.write(l + "<br><br>");
+
+
+
+// // 2. toLowerCase :
+// var str = "Let's See the SECOND String Method";
+// document.write(str + "<br><br>");
+// var l = str.toLowerCase();
+// document.write(l + "<br><br>");
+
+
+
+
+// // 3. toUpperCase :
+// var str = "let's see the third string method";
+// document.write(str + "<br><br>");
+// var u = str.toUpperCase();
+// document.write(u + "<br>");
+
+
+
+
+// // 4. includes :
+// var str = "let's see the fourth string method";
+// var i = str.includes("let's see");
+// document.write(i + "<br>");
+
+
+
+
+// // 5. startsWith :
+// var str = "let's see the fifth string method";
+// var i = str.startsWith("let's");
+// document.write(i + "<br>"); 
+
+
+
+
+// // 6. endsWith :
+// var str = "let's see the sixth string method!";
+// var i = str.endsWith("method");
+// document.write(i + "<br>");
+
+
+
+
+// // 7. search :
+// var str = "let's see the sixth string method";
+// var i = str.search("string");
+// document.write(i + "<br>");
+
+
+
+
+// // 8. match :
+// var str = "let's see the eigth string method";
+// // var i = str.match("t");
+// var i = str.match(/t/g);
+// document.write(i + "<br>");
+// document.write(typeof(i));
+// console.log(typeof(i));
+// console.log(i);
+
+
+
+
+// // 9. indexOf :
+// var str = "let's see the ninth string method";
+// var i = str.indexOf("s", 9);
+// document.write(i + "<br>");
+
+
+
+
+// // 10. lastIndexOf :
+// var str = "let's see the ninth string method";
+// var i = str.lastIndexOf("h");
+// document.write(i + "<br>");
+
+
+
+
+// // 11. replace :
+// var str = "let's see the ninth see string see method see";
+// document.write(str + "<br>");
+// // var i = str.replace("see", "move"); // (// can be used for more then one replace)
+// var i = str.replace(/see/g, "move"); // (// can be used for more then one replace)
+// document.write(i + "<br>");
+
+
+
+
+// // 12. trim :
+// var str = "      Hello       Students";
+// document.write(str);
+// console.log(str);
+// document.write(str);
+// var a = str.trim();
+// console.log(a);
+
+
+
+
+// // 13. charAt :
+// var str = "let's see the ninth string method";
+// var i = str.charAt(12);
+// document.write(i + "<br>");
+
+
+
+
+// // 14. charCodeAt :
+// var str = "let's see the ninth string method";
+// var i = str.charCodeAt(3);
+// document.write(i + "<br>");
+
+
+
+
+// var i = String.fromCharCode(65,66,67,68,69);
+// document.write(i + "<br>"); 
+
+
+
+
+
+// 15. concat  :
+// var str = "I'm a student";
+// var s = " and i belong to Indore";
+// var a = str.concat(s);
+// document.write(a + "<br>");
+
+
+
+
+// // 16. split :
+// var str = "JavaScript is a intresting language";
+// var a = str.split("");
+// document.write(a + "<br>");
+// document.write(typeof(a));
+
+
+
+
+// // 17. repeat :
+// var str = "JavaScript is a intresting language";
+// var a = str.repeat(3);
+// document.write(a + "<br>");
+
+
+
+// // 18. slice :
+// var str = "JavaScript is a intresting language";
+// // var a = str.slice(10);
+// var a = str.slice(-10, 20);
+// document.write(a + "<br>");
+
+
+// let ar  = [10,20,30,60,90,41];
+// let newSlice = ar.slice(-5, 5)
+// document.write(newSlice);
+
+
+// // 19. substr :
+// var str = "JavaScript is a intresting language";
+// var a = str.substr(3,6);
+// document.write(a + "<br>");
+
+
+
+
+// // 20. substring :
+// var str = "JavaScript is a intresting language";
+// var a = str.substring(3,6);
+// document.write(a + "<br>");
+
+
+
+
+// // 21. toString :
+// var st = 25014;
+// var str = st.toString();
+// document.write(str + "<br>");
+// document.write(typeof(str));
+
+
+
+
+
+
+// Event handlers - 
+
+// let divEle = document.getElementsByTagName("div");
+// console.log(divEle);
+
+// let classEle = document.getElementsByClassName("container");
+// console.log(classEle);
+
+// let uniqueEle = document.getElementById("cont");
+// console.log(uniqueEle);
+
+
+
+// querySelector & querySelectorAll
+
+// let ele = document.querySelector("div");
+// console.log(ele);
+
+// let ele = document.querySelectorAll(".container1");
+// console.log(ele);
+
+// let ele = document.querySelector("#cont3");
+// console.log(ele);
+
+
+
+
+
+
+function showMessage(){
+    alert("Hello From JavaScript!");
+}
+
+
+let btn_ele = document.querySelector("#btn");
+console.log(btn_ele);
+
+
+// btn_ele.onclick = showMessage; deprecated due the performance lack in huge scale application
+
+
+// btn_ele.addEventListener("click", () => {
+//     alert("Hello From JavaScript!");
+// })
+
+// btn_ele.addEventListener("click", showMessage);
+
+// btn_ele.addEventListener("dblclick", () => {
+//     alert("Double Click Event!");
+// })
+
+
+// btn_ele.addEventListener("contextmenu", () => {
+//     alert("context menu Event! (Right kilik wala!)");
+// })
+
+
+// btn_ele.addEventListener("mouseenter", () => {
+//     alert("context menu Event! (Right kilik wala!)");
+// })
+
+
+
+// btn_ele.addEventListener("mouseleave", () => {
+//     alert("context menu Event! (Right kilik wala!)");
+// })
+
+
+// btn_ele.addEventListener("keypress", () => {
+//     alert("context menu Event! (Right kilik wala!)");
+// })
+
+
+// document.addEventListener("keypress", () => {
+//     alert("You pressed some keys!");
+// })
+
+
+
+// document.addEventListener("keyup", () => {
+//     alert("You pressed some keys!");
+// })
+
+
+
+// document.addEventListener("keydown", () => {
+//     alert("You pressed some keys!");
+// })
+
+
+
+// document.addEventListener("scroll", () => {
+//     alert("You pressed some keys!");
+// })
+
+
+
+
+
