@@ -414,14 +414,14 @@
 // }
 
 
-let obj = {
-    perName: "Mahipal",
-    perAge: 150,
-    perDOB: "01/01/2001",
-    print: function(){
-        console.log(`${this.perName}`);
-    }
-}
+// let obj = {
+//     perName: "Mahipal",
+//     perAge: 150,
+//     perDOB: "01/01/2001",
+//     print: function(){
+//         console.log(`${this.perName}`);
+//     }
+// }
 
 // Traditional method to iterate an object -
 // console.log(obj[Object.keys(obj)[2]]);
@@ -694,17 +694,319 @@ function ages(age){
 
 
 // 23. map() :
-let arr = [10,20,30,40,50,60];
-let a = arr.forEach((val, ind) => {
-    return val + 10
+// let arr = [10,20,30,40,50,60];
+// let a = arr.forEach((val, ind) => {
+//     return val + 10
+// })
+
+
+// let b = arr.map((val, ind) => {
+//     return val + 10;
+// })
+
+
+
+// console.log(a);
+// console.log(b);
+
+
+
+
+
+// 23 .reduce() :
+
+// let arr = [1,2,3,4,5,6,7,9,9,3,1,4,86,10];
+
+// let sin_res = arr.reduce((acc,curr) => {
+//     return acc + curr;
+// })
+
+// console.log(sin_res);
+
+
+
+
+
+
+// String Methods - 
+// // 1. Length :
+// let str = "This is a JavaScript Tutorial.";
+// let l = str.length;
+// document.write(l + "<br><br>");
+
+
+
+// // 2. toLowerCase :
+// let str = "Let's See the SECOND String Method";
+// document.write(str + "<br><br>");
+// let l = str.toLowerCase();
+// document.write(l + "<br><br>");
+
+
+
+// // 3. toUpperCase :
+// var str = "let's see the third string method";
+// document.write(str + "<br>");
+// var u = str.toUpperCase();
+// document.write(u + "<br>");
+
+
+
+// // 4. includes :
+// var str = "let's see the fourth string method";
+// var i = str.includes("let's see");
+// document.write(i + "<br>");
+
+
+
+
+// // 5. startsWith :
+// var str = "let's see the fifth string method";
+// var i = str.startsWith("fifth");
+// document.write(i + "<br>"); 
+
+
+
+
+// // 6. endsWith :
+// var str = "let's see the sixth string method!";
+// var i = str.endsWith("!");
+// document.write(i + "<br>");
+
+
+
+// // 7. search :
+// var str = "let's see the sixth string method";
+// var i = str.search("s");
+// document.write(i + "<br>");
+
+
+
+
+// // 8. match :
+// let str = "let's see the see eigth see string see method";
+// // let i = str.match("t");
+// let i = str.match(/Nandini/g);
+// document.write(i + "<br>");
+// document.write(typeof(i));
+
+
+
+
+// // 9. indexOf :
+// var str = "let's see the ninth string method";
+// var i = str.indexOf("s", 5);
+// document.write(i + "<br>");
+
+
+
+
+// // 10. lastIndexOf :
+// var str = "let's see the ninth string method";
+// var i = str.lastIndexOf("h", 29);
+// document.write(i + "<br>");
+
+
+
+// // 11. replace :
+// var str = "let's see the ninth see string see method see";
+// document.write(str + "<br>");
+// // var i = str.replace("see", "move"); // (// can be used for more then one replace)
+// var i = str.replace(/see/g, "move"); // (// can be used for more then one replace)
+// document.write(i + "<br>");
+
+
+
+
+// // 12. trim :
+// var str = "      Hello       Students";
+// document.write(str);
+// console.log(str);
+// document.write(str);
+// var a = str.trim();
+// console.log(a);
+
+
+
+
+// // 13. charAt :
+// var str = "let's see the ninth string method";
+// var i = str.charAt(12); // (// can be used for more then one replace)
+// document.write(i + "<br>");
+
+
+
+
+// // 14. charCodeAt :
+// var str = "let's see the ninth string method";
+// var i = str.charCodeAt(12);
+// document.write(i + "<br>");
+
+
+
+// str = String.fromCharCode(90);
+// document.write(str);
+
+
+
+// 15. concat  :
+// var str = "I'm a student";
+// var s = " and i belong to Indore";
+// var a = str.concat(s);
+// document.write(a + "<br>");
+
+
+
+// // 16. split :
+// var str = "JavaScript is a intresting language";
+// var a = str.split("");
+// document.write(a + "<br>");
+
+
+
+
+
+// // 17. repeat :
+// var str = "JavaScript is a intresting language";
+// var a = str.repeat(3);
+// document.write(a + "<br>");
+
+
+
+// // 18. slice :
+// var str = "JavaScript is a intresting language";
+// // var a = str.slice(10);
+// var a = str.slice(10, 20);
+// document.write(a + "<br>");
+
+// // 19. substr :
+// var str = "JavaScript is a intresting language";
+// var a = str.substr(3,24);
+// document.write(a + "<br>");
+
+// // // 20. substring :
+// var str = "JavaScript is a intresting language";
+// var a = str.substring(3,24);
+// document.write(a + "<br>");
+
+// // 21. toString :
+// var st = 25014;
+// var str = st.toString();
+// document.write(str + "<br>");
+// document.write(typeof(str));
+
+
+
+
+
+
+// DOM - Document Object Model
+
+// let divEle = document.getElementsByTagName("div");
+// console.log(divEle);
+// // console.log(divEle[0]);
+
+
+// let divEle = document.getElementsByClassName("container");
+// console.log(divEle);
+// console.log(divEle[0]);
+
+
+// let domEle = document.getElementById("cont1");
+// console.log(domEle);
+
+
+
+
+
+// querySelector & querySelectorAll
+
+// let single_ele = document.querySelector("div");
+// let coll_ele = document.querySelectorAll("div");
+// console.log(single_ele);
+// console.log(coll_ele);
+
+
+
+// let class_ele = document.querySelector(".container");
+// let coll_class_ele = document.querySelectorAll(".container");
+// console.log(class_ele);
+// console.log(coll_class_ele);
+
+
+
+// let id_ele = document.querySelector("#cont1");
+// let coll_id_ele = document.querySelectorAll("#cont1");
+// console.log(id_ele);
+// console.log(coll_id_ele);
+
+
+// Event Handling - 
+
+function show_message(){
+    alert("Hello From JavaScript!");
+}
+
+let button_ele = document.getElementById("btn");
+
+
+// button_ele.addEventListener("click", show_message);
+
+// button_ele.addEventListener("click", function(){
+//     console.log("Hello, I am Anonymous Function!");
+// });
+
+// button_ele.addEventListener("click", () => {
+//     document.write("Function fired!");
+// });
+
+
+
+// button_ele.addEventListener("dblclick", () => {
+//     document.write("Function fired!");
+// });
+
+
+// button_ele.addEventListener("contextmenu", () => {
+//     document.write("Function fired!");
+// });
+
+
+// button_ele.addEventListener("mouseenter", () => {
+//     document.write("Function fired!");
+// });
+
+
+// button_ele.addEventListener("mouseout", () => {
+//     document.write("Function fired!");
+// });
+
+
+// button_ele.addEventListener("keypress", () => {
+//     document.write("Function fired!");
+// });
+
+
+// button_ele.addEventListener("keydown", () => {
+//     document.write("Function fired!");
+// });
+
+
+// button_ele.addEventListener("keyup", () => {
+//     document.write("Function fired!");
+// });
+
+
+let theme = true;
+
+button_ele.addEventListener("click", () => {
+    if(theme){
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+        theme = !theme;
+    }else{
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+        theme = !theme;
+    }
 })
-
-
-let b = arr.map((val, ind) => {
-    return val + 10;
-})
-
-
-
-console.log(a);
-console.log(b);
