@@ -358,14 +358,12 @@
 
 // let obMarks = obtMarks(50,50,50,50,50);
 
-
 // function percentage(obtMarks, tMarks){
 //     let percent = (obtMarks / tMarks) * 100;
 //     return percent;
 // }
 
 // let  stdPer = percentage(obMarks, 500);
-
 
 // function result(stdName, obtMarks, tMarks, percentage){
 //     if(percentage > 80 && percentage <= 100){
@@ -387,13 +385,7 @@
 
 // result(student_name, obMarks, 500, stdPer);
 
-
-
-
-
-
-
-// Array - 
+// Array -
 // let arr = [10,20,30,540,60,75];
 // console.log(arr);
 
@@ -413,7 +405,6 @@
 //     console.log(arr[i]);
 // }
 
-
 // let obj = {
 //     perName: "Mahipal",
 //     perAge: 150,
@@ -429,11 +420,10 @@
 //     console.log(Object.keys(obj)[key] + " : " + obj[Object.keys(obj)[key]]);
 // }
 
-// // Modern For Loop - 
+// // Modern For Loop -
 // for(let objKiKey in obj){
 //     console.log(`${objKiKey} : ${obj[objKiKey]}`);
 // }
-
 
 // console.log(objectName.key);
 // console.log(obj.perName);
@@ -442,15 +432,11 @@
 
 // obj.print();
 
-
-
 // for(let key in obj){
 //     console.log(obj[key]);
 // }
 
-
-
-// Array Methods - 
+// Array Methods -
 // let arr = [10,20,50,80,75,60];
 // console.log(arr);
 // console.log(typeof(arr));
@@ -460,9 +446,8 @@
 // var arr = ["amrit","arpit","Neha","sita","Pramod","isha"];
 // // let arr = [1,4,1,52,6,3,9,5,8,96,2];
 // document.write(arr + "<br><br>");
-// arr.sort(); 
+// arr.sort();
 // document.write(arr + "<br>");
-
 
 // // 2. sort :.reverse()
 
@@ -472,7 +457,6 @@
 // // ary.sort().reverse();
 // document.write(ary);
 
-
 // // 3. Pop :
 
 // var arr = ["arpit", "shikha", "aman", "priya"];
@@ -480,15 +464,12 @@
 // arr.pop();
 // document.write(arr);
 
-
 // // 4. Push :
 
 // var arr = ["arpit", "shikha", "aman", "priya"];
 // console.log(arr, "<br><br>");
 // arr.push(["rahul", 'Subodh']);
 // console.log(arr);
-
-
 
 // // 5. shift :
 
@@ -498,16 +479,12 @@
 // arr.shift();
 // document.write(arr);
 
-
-
 // // 6. unShift :
 
 // var arr = ["arpit", "shikha", "aman", "priya"];
 // document.write(arr, "<br><br>");
 // arr.unshift("shalini", "shobha");
 // document.write(arr);
-
-
 
 // 7. concat :
 // var a = [10,20,"Rahul"];
@@ -521,16 +498,12 @@
 // let e = a.concat(a, b, c);
 // console.log(e);
 
-
-
-
 // // 8. Join :
 
 // var a = [10,50,"Rahul","shikha"];
 // // var b = ["shobha", "geeta", "sita"];
 // var c = a.join("-");
 // document.write(c);
-
 
 // // 10. slice :
 
@@ -541,8 +514,6 @@
 // document.write(b +"<br><br>");
 // document.write(h);
 
-
-
 // // 11. Splice :
 
 // var a = ["Rahul", 50, 80, 95, 60];
@@ -551,9 +522,7 @@
 // a.splice(3, 1, "Aman", 10);
 // document.write(a + "<br><br><br>");
 
-
-
-// // 12. isArray : 
+// // 12. isArray :
 
 // var arr = [10, 50 ,40 ,"Sahil"];
 // if(Array.isArray(arr)){
@@ -563,9 +532,6 @@
 //     document.write("No, This not an array")
 // }
 
-
-
-
 // // 13. indexOf :
 
 // var b = [10, 20, 45, 30, 20, 45, 54, 45];
@@ -573,25 +539,17 @@
 // document.write(a);
 // var a = b.indexOf(search  , start);
 
-
-
-// // 14. lastIndexOf : 
+// // 14. lastIndexOf :
 
 // var g = ["Str", 30, 50, 45, 50, 45, 50,true];
 // var h = g.lastIndexOf(50); // g.lastIndexOf(seacrh item)
 // document.write(h);
-
-
-
 
 // // 15. Includes :
 
 // var ary = ["Sagar", "Atul", "Sanjay"];
 // var h = ary.includes("Atul");
 // document.write(h + "<br><br><br><br>");
-
-
-
 
 // // 16. Some :
 // var age = [10, 50, 18];
@@ -604,14 +562,13 @@
 // });
 // document.write(check + "<br><br>");
 
-
 // Fat-Arrow-Fuction (Function Expression)
 // let ages = (age) => {
 //     return age >= 18;
 // }
 
-function ages(age){
-    return age >= 18;
+function ages(age) {
+  return age >= 18;
 }
 
 // Anonymous function -
@@ -619,18 +576,12 @@ function ages(age){
 //     console.log(para);
 // }
 
-
-
-// // 17. Every : 
+// // 17. Every :
 
 // var k = [20, 50, 80];
 // document.write(k + "<br><br><br>");
 // var y = k.every(ages);
 // document.write(y);
-
-
-
-
 
 // // 18. Find :
 // var p = [10, 22, 55, 19, 50];
@@ -642,7 +593,7 @@ function ages(age){
 //     return p >= 20;
 // }
 
-// 19. FindIndex : 
+// 19. FindIndex :
 // let q = [10, 15, 18, 50];
 // document.write(q + "<br><br><br>");
 // var r = q.findIndex(ages);
@@ -651,9 +602,6 @@ function ages(age){
 // function ages(q){
 //     return q >= 18;
 // }
-
-
-
 
 // // 20. Filter :
 
@@ -666,9 +614,7 @@ function ages(age){
 //     return a >= 18;
 // }
 
-
-
-// // 21. toString : 
+// // 21. toString :
 
 // var t = ["Rahul", 50, 48, "Sanjeev"];
 // console.log(t);
@@ -676,8 +622,6 @@ function ages(age){
 // var str = t.toString();
 // document.write(str);
 // console.log(typeof(str));
-
-
 
 // // 22. Array forEach Loop :
 
@@ -690,28 +634,18 @@ function ages(age){
 //     document.write( i + "-" + ary[i] + "<br>");
 // }
 
-
-
-
 // 23. map() :
 // let arr = [10,20,30,40,50,60];
 // let a = arr.forEach((val, ind) => {
 //     return val + 10
 // })
 
-
 // let b = arr.map((val, ind) => {
 //     return val + 10;
 // })
 
-
-
 // console.log(a);
 // console.log(b);
-
-
-
-
 
 // 23 .reduce() :
 
@@ -723,18 +657,11 @@ function ages(age){
 
 // console.log(sin_res);
 
-
-
-
-
-
-// String Methods - 
+// String Methods -
 // // 1. Length :
 // let str = "This is a JavaScript Tutorial.";
 // let l = str.length;
 // document.write(l + "<br><br>");
-
-
 
 // // 2. toLowerCase :
 // let str = "Let's See the SECOND String Method";
@@ -742,46 +669,31 @@ function ages(age){
 // let l = str.toLowerCase();
 // document.write(l + "<br><br>");
 
-
-
 // // 3. toUpperCase :
 // var str = "let's see the third string method";
 // document.write(str + "<br>");
 // var u = str.toUpperCase();
 // document.write(u + "<br>");
 
-
-
 // // 4. includes :
 // var str = "let's see the fourth string method";
 // var i = str.includes("let's see");
 // document.write(i + "<br>");
 
-
-
-
 // // 5. startsWith :
 // var str = "let's see the fifth string method";
 // var i = str.startsWith("fifth");
-// document.write(i + "<br>"); 
-
-
-
+// document.write(i + "<br>");
 
 // // 6. endsWith :
 // var str = "let's see the sixth string method!";
 // var i = str.endsWith("!");
 // document.write(i + "<br>");
 
-
-
 // // 7. search :
 // var str = "let's see the sixth string method";
 // var i = str.search("s");
 // document.write(i + "<br>");
-
-
-
 
 // // 8. match :
 // let str = "let's see the see eigth see string see method";
@@ -790,23 +702,15 @@ function ages(age){
 // document.write(i + "<br>");
 // document.write(typeof(i));
 
-
-
-
 // // 9. indexOf :
 // var str = "let's see the ninth string method";
 // var i = str.indexOf("s", 5);
 // document.write(i + "<br>");
 
-
-
-
 // // 10. lastIndexOf :
 // var str = "let's see the ninth string method";
 // var i = str.lastIndexOf("h", 29);
 // document.write(i + "<br>");
-
-
 
 // // 11. replace :
 // var str = "let's see the ninth see string see method see";
@@ -814,9 +718,6 @@ function ages(age){
 // // var i = str.replace("see", "move"); // (// can be used for more then one replace)
 // var i = str.replace(/see/g, "move"); // (// can be used for more then one replace)
 // document.write(i + "<br>");
-
-
-
 
 // // 12. trim :
 // var str = "      Hello       Students";
@@ -826,28 +727,18 @@ function ages(age){
 // var a = str.trim();
 // console.log(a);
 
-
-
-
 // // 13. charAt :
 // var str = "let's see the ninth string method";
 // var i = str.charAt(12); // (// can be used for more then one replace)
 // document.write(i + "<br>");
-
-
-
 
 // // 14. charCodeAt :
 // var str = "let's see the ninth string method";
 // var i = str.charCodeAt(12);
 // document.write(i + "<br>");
 
-
-
 // str = String.fromCharCode(90);
 // document.write(str);
-
-
 
 // 15. concat  :
 // var str = "I'm a student";
@@ -855,23 +746,15 @@ function ages(age){
 // var a = str.concat(s);
 // document.write(a + "<br>");
 
-
-
 // // 16. split :
 // var str = "JavaScript is a intresting language";
 // var a = str.split("");
 // document.write(a + "<br>");
 
-
-
-
-
 // // 17. repeat :
 // var str = "JavaScript is a intresting language";
 // var a = str.repeat(3);
 // document.write(a + "<br>");
-
-
 
 // // 18. slice :
 // var str = "JavaScript is a intresting language";
@@ -895,29 +778,18 @@ function ages(age){
 // document.write(str + "<br>");
 // document.write(typeof(str));
 
-
-
-
-
-
 // DOM - Document Object Model
 
 // let divEle = document.getElementsByTagName("div");
 // console.log(divEle);
 // // console.log(divEle[0]);
 
-
 // let divEle = document.getElementsByClassName("container");
 // console.log(divEle);
 // console.log(divEle[0]);
 
-
 // let domEle = document.getElementById("cont1");
 // console.log(domEle);
-
-
-
-
 
 // querySelector & querySelectorAll
 
@@ -926,29 +798,32 @@ function ages(age){
 // console.log(single_ele);
 // console.log(coll_ele);
 
-
-
 // let class_ele = document.querySelector(".container");
 // let coll_class_ele = document.querySelectorAll(".container");
 // console.log(class_ele);
 // console.log(coll_class_ele);
-
-
 
 // let id_ele = document.querySelector("#cont1");
 // let coll_id_ele = document.querySelectorAll("#cont1");
 // console.log(id_ele);
 // console.log(coll_id_ele);
 
+// Event Handling -
 
-// Event Handling - 
+function show_message() {
+  alert("Hello From JavaScript!");
+}
 
-function show_message(){
-    alert("Hello From JavaScript!");
+function showMessage() {
+  let confirmation = confirm("Really wants to see message?");
+  if (confirmation) {
+    console.log("Hello From JavaScript");
+  } else {
+    console.log("you're not allowed to check messages");
+  }
 }
 
 let button_ele = document.getElementById("btn");
-
 
 // button_ele.addEventListener("click", show_message);
 
@@ -960,53 +835,184 @@ let button_ele = document.getElementById("btn");
 //     document.write("Function fired!");
 // });
 
-
-
 // button_ele.addEventListener("dblclick", () => {
 //     document.write("Function fired!");
 // });
-
 
 // button_ele.addEventListener("contextmenu", () => {
 //     document.write("Function fired!");
 // });
 
-
 // button_ele.addEventListener("mouseenter", () => {
 //     document.write("Function fired!");
 // });
-
 
 // button_ele.addEventListener("mouseout", () => {
 //     document.write("Function fired!");
 // });
 
-
 // button_ele.addEventListener("keypress", () => {
 //     document.write("Function fired!");
 // });
-
 
 // button_ele.addEventListener("keydown", () => {
 //     document.write("Function fired!");
 // });
 
-
 // button_ele.addEventListener("keyup", () => {
 //     document.write("Function fired!");
 // });
 
+// let theme = true;
 
-let theme = true;
+// button_ele.addEventListener("click", () => {
+//     if(theme){
+//         document.body.style.backgroundColor = "black";
+//         document.body.style.color = "white";
+//         theme = !theme;
+//     }else{
+//         document.body.style.backgroundColor = "white";
+//         document.body.style.color = "black";
+//         theme = !theme;
+//     }
+// })
 
-button_ele.addEventListener("click", () => {
-    if(theme){
-        document.body.style.backgroundColor = "black";
-        document.body.style.color = "white";
-        theme = !theme;
-    }else{
-        document.body.style.backgroundColor = "white";
-        document.body.style.color = "black";
-        theme = !theme;
-    }
-})
+// get methods -
+// innerText | textContent
+// innerHTML
+// getAttribute
+// attributes
+// getAttributeNode
+
+let btn = document.getElementById("btn");
+// let btn = document.querySelector("#btn");
+
+// let btn_text = btn.innerText;
+// let btn_text = btn.textContent;
+// let btn_text = btn.innerHTML;
+// console.log(btn_text);
+
+// let btn_id_attr = btn.getAttribute("id");
+// console.log(btn_id_attr);
+// let btn_id_attr = btn.getAttribute("class");
+// console.log(btn_id_attr);
+// let btn_id_attr = btn.getAttribute("onclick");
+// console.log(btn_id_attr);
+
+// let attr_arr = btn.attributes;
+// console.log(attr_arr);
+
+// set methods -
+// innerText | textContent
+// innerHTML
+// setAttribute
+// removeAttribute
+
+// console.log(btn);
+// btn.innerText = "Change BG";
+
+// console.log(btn);
+
+// btn.innerHTML = "<i>change <b>background</b> color</i>";
+
+// let attr = btn.getAttribute("onclick");
+// console.log(attr);
+// btn.innerHTML = "<i>change <u>background</u> color</i>";
+// btn.setAttribute("onclick", "showMessage()");
+
+// btn.removeAttribute("onclick");
+
+// btn.setAttribute("class", "container");
+// let ele = document.querySelectorAll("div");
+
+// btn.addEventListener("click", () => {
+//     ele[0].setAttribute("class", "container");
+//     ele[1].setAttribute("class", "container");
+//     btn.setAttribute("style", "background-color: black; padding: 10px; margin: 20px 0 20px 0; transform: translateX(100px); color: orange; border: 1px solid darkcyan; border-radius: 5px;")
+// })
+
+// DOM Styling Methods - style | classList | className
+
+// btn.style.border = "1px solid black";
+// btn.style.borderRadius = "50px";
+// btn.style.backgroundColor = "beige";
+// btn.style.padding = "10px";
+// btn.style.margin = "20px";
+// btn.style.transform = "translate(400px, 0)";
+
+// // style using classList
+// let h1Ele = document.getElementById("headEle");
+
+// console.log(h1Ele);
+
+// let headEleClassList = h1Ele.classList;
+// btn.addEventListener("click", () => {
+//     headEleClassList.toggle("cont3");
+// })
+
+// btn.addEventListener("click",() => {
+//     if(headEleClassList.contains("cont3")){
+//         headEleClassList.remove("cont3");
+//     }else{
+//         headEleClassList.add("cont3");
+//     }
+// })
+
+// btn.addEventListener("dblclick", () => {
+//     let headEleClassList = h1Ele.classList;
+//     headEleClassList.remove("cont3");
+// })
+
+// btn.addEventListener("click", () => {
+//     let headEleClassList = h1Ele.classList;
+//     headEleClassList.add("cont3");
+// })
+
+
+
+
+// style using className -
+
+// let h1Classes = h1Ele.className;
+// console.log(h1Classes);
+// btn.addEventListener("click", () => {
+//     console.log("event triggered!");
+//     h1Ele.className = "cont1 cont2";
+// })
+
+
+
+
+
+// Ad Traversal Methods - 
+
+// let cont1 = document.querySelector(".cont1");
+// console.log(cont1);
+// console.log(cont1.children)
+// console.log(cont1.firstElementChild);
+// console.log(cont1.lastElementChild.firstElementChild);
+
+// console.log(cont1.firstElementChild.nextElementSibling)
+// console.log(cont1.lastElementChild.previousElementSibling);
+
+// let spanEle = cont1.firstElementChild.nextElementSibling.firstElementChild;
+// console.log(spanEle);
+
+// console.log(spanEle.parentElement.parentElement.parentElement)
+
+
+
+// Creating elements usins JS DOM Manipulation -
+// creating an h1 element in our HTML
+
+// let h1Ele = document.createElement("h1");
+// console.log(h1Ele);
+// let cont1 = document.querySelector(".cont1");
+
+// // append method element ki aakhri me (last me) append karega element ko
+// h1Ele.innerHTML = "H1 Element Created by JS DOM";
+// document.body.append(h1Ele);
+
+// insertBefore method element ke kisi bhi nested element se pehele insert karega element ko
+// cont2.append(h1Ele);
+// document.querySelector(".parent").insertBefore(h1Ele, cont1);
