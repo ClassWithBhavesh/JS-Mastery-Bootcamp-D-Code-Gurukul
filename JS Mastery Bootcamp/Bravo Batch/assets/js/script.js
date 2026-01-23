@@ -936,13 +936,21 @@ let obj = {
 
 
 
-function showMessage(){
-    alert("Hello From JavaScript!");
-}
+// function showMessage(){
+//     alert("Hello From JavaScript!");
+// }
 
+// function show_message(){
+//     let confirmation = confirm("Do you really wanna see the message!");
+//     if(confirmation){
+//         alert("Hello from JavaScript");
+//     }else{
+//         alert("You're not allowed to see the messages!");
+//     }
+// }
 
-let btn_ele = document.querySelector("#btn");
-console.log(btn_ele);
+// let btn_ele = document.querySelector("#btn");
+// console.log(btn_ele);
 
 
 // btn_ele.onclick = showMessage; deprecated due the performance lack in huge scale application
@@ -1006,3 +1014,185 @@ console.log(btn_ele);
 
 
 
+// DOM Manipulation - 
+// get methods -
+// 1. innerText | textContent
+// 2. innerHTML
+// 3. getAttribute
+// 4. attributes
+// 5. getAttributeNode
+
+
+// let divEle = document.getElementsByTagName("div");
+// let divEle = document.querySelector("div");
+
+
+// let div1 = document.querySelector(".div1");
+// let div3 = document.querySelector(".div3");
+// console.log(div1);
+
+// console.log(div1.innerText);
+// console.log(div1.textContent);
+// console.log(div1.innerHTML);
+// console.log(div1.getAttribute("class"));
+// console.log(div1.getAttribute("id"));
+// console.log(div1.getAttribute("onclick"));
+// console.log(div3.getAttribute("style"));
+
+// console.log(div1.attributes.onclick.value);
+
+// console.log(div3.getAttributeNode("style"));
+
+
+
+
+
+// set methods -
+// 1. innerText | textContent
+// 2. innerHTML
+// 3. setAttribute
+// 4. removeAttribute
+
+// let div1Text = div1.textContent;
+// console.log(div1Text);
+
+// div1Text = "Div1 Element";
+// console.log(div1Text)
+
+
+// let divInnerHTML = div1.innerHTML;
+// console.log(divInnerHTML);
+// div1.innerHTML = "<u><b>Lorem <i>ipsum dolor</i> sit amet.</b></u>";
+
+// let btn = document.querySelector("#btn");
+
+// div1.addEventListener("click", () => {
+//     console.log(div1.getAttribute("onclick"));
+// })
+
+// let funcState = true;
+
+// btn.addEventListener("dblclick", () => {
+//     if(funcState){
+//         div1.setAttribute("onclick", "show_message()");
+//         console.log("Function changed!");
+//         funcState = !funcState;
+//     }else{
+//         div1.setAttribute("onclick", "showMessage()");
+//         console.log("Function changed!");
+//         funcState = !funcState;
+//     }
+// })
+
+// let rem_btn = document.querySelector("#rem_btn");
+
+// rem_btn.addEventListener("contextmenu", () => {
+//     div1.removeAttribute("onclick");
+// })
+
+
+
+
+
+// Style using DOM Manipulation
+// 1. style
+// 2. classList
+// 3. className
+
+
+
+
+// let rem_btn = document.querySelector("#rem_btn");
+// let btn = document.querySelector("#btn");
+
+
+// btn.addEventListener("click", () => {
+//     rem_btn.style.padding = "10px";
+//     rem_btn.style.backgroundColor = "skyblue";
+//     rem_btn.style.border = "1px solid black";
+//     rem_btn.style.borderRadius = "50px";
+//     rem_btn.style.margin = "20px 0 20px 0";
+//     rem_btn.style.transform = "translateX(20%)";
+// })
+
+// let bgStatus = true;
+
+// btn.addEventListener("click", () => {
+//     if(bgStatus){
+//         div1.classList.remove("divElement");
+//         bgStatus = !bgStatus;
+//     }else{
+//         div1.classList.add("divElement");
+//         bgStatus = !bgStatus;
+//     }
+// })
+
+
+// btn.addEventListener("click", () => {
+//     div1.classList.toggle("divElement");
+// })
+
+
+
+
+
+
+// contains - true | false
+
+
+// let check = div1.classList.contains("container");
+// console.log(check);
+
+
+
+
+// btn.addEventListener("click", () => {
+//     if(div3.classList.contains("divElement")){
+//         div3.classList.remove("divElement");
+//     }else{
+//         div3.classList.add("divElement");
+//     }
+// })
+
+
+
+// className - 
+// let div2 = document.querySelector(".div2");
+
+// console.log(div2.className);
+
+
+// div2.className = "div2 container";
+// console.log(div2.className);
+
+
+
+
+// box1 = document.querySelector(".box1");
+// // console.log(box1.lastElementChild.previousElementSibling.lastElementChild.previousElementSibling);
+// let item3 = box1.lastElementChild.previousElementSibling.lastElementChild.previousElementSibling;
+
+
+// console.log(item3.previousElementSibling.textContent);
+// console.log(item3.nextElementSibling.textContent);
+// console.log(item3.parentElement.parentElement.parentElement);
+
+// console.log(document.querySelector("#root").parentNode);
+
+
+
+
+
+// creating HTML elements using JS DOM - 
+
+// let anchorEle = document.createElement("a");
+// // console.log(anchorEle);
+// anchorEle.setAttribute("href", "https://google.com");
+// console.log(anchorEle);
+// anchorEle.innerHTML = "Click Here";
+
+// // document.body.append(anchorEle);
+
+// let box1 = document.querySelector(".box1");
+// let box2 = document.querySelector(".box2");
+// document.querySelector(".parent").insertBefore(anchorEle, box2);
