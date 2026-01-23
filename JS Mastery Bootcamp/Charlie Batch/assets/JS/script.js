@@ -385,12 +385,10 @@
 //   return obtMarks;
 // }
 
-
 // function percentage(obt_marks, tMarks) {
 //   let percent = (obt_marks / tMarks) * 100;
 //   return percent;
 // }
-
 
 // function result(std_name, obt_marks, tMarks, per) {
 //   if (per > 80 && per <= 100) {
@@ -417,14 +415,11 @@
 // let ob_marks = obt_marks(hnMarks, enMarks, scMarks, sstMarks, mMarks);
 // let percent = percentage(ob_marks, 500);
 
-
 // result("Utkarsh", ob_marks, 500, percent);
 
 // message();
 
-
-
-// 
+//
 // console.log(count);
 
 // function message(){
@@ -433,15 +428,10 @@
 
 // message();
 
-
-
 // const count = 58;
 // console.log(count);
 
-
-
-
-// Array in JavaScript - 
+// Array in JavaScript -
 // let arr = [10,20,30,50,9,60];
 // console.log(arr[0]);
 // console.log(arr[1]);
@@ -458,9 +448,6 @@
 // for(let ind = 0; arr[ind] != undefined; ind++){
 //     console.log(arr[ind]);
 // }
-
-
-
 
 // Objects in JavaScript -
 // let obj = {
@@ -483,11 +470,7 @@
 
 // console.log(obj[Object.keys(obj)[2]]);
 
-
-
-
-
-// 
+//
 
 // let userInput = Number(prompt("Enter a number - "));
 // let temp = userInput;
@@ -512,25 +495,16 @@
 //     console.log(`${userInput} is not a armstrong numebER!`);
 // }
 
-
-
-
-
-
-
-
-// Array Methods - 
+// Array Methods -
 
 // // 1. Sort :
 
 // var arr = ["amrit","arpit","Neha","sita","Pramod","isha"];
 // let arr = [1,4,1,52,6,3,9,5,8,96,2];
 // document.write(arr + "<br><br>");
-// arr.sort(); 
+// arr.sort();
 // arrName.sort().reverse();
 // document.write(arr + "<br>");
-
-
 
 // // 2. .reverse() :
 
@@ -540,17 +514,12 @@
 // // ary.sort().reverse();
 // document.write(ary);
 
-
-
-
 // // 3. Pop :
 
 // var arr = ["arpit", "shikha", "aman", "priya"];
 // document.write(arr +"<br><br>");
 // arr.pop();
 // document.write(arr);
-
-
 
 // // 4. Push :
 
@@ -561,9 +530,6 @@
 // document.write(arr, "<br><br>");
 // console.log(arr);
 
-
-
-
 // // 5. shift :
 
 // var arr = ["arpit", "shikha", "aman", "priya"];
@@ -572,17 +538,12 @@
 // // arr.shift();
 // document.write(arr);
 
-
-
-
 // // 6. unShift :
 
 // var arr = ["arpit", "shikha", "aman", "priya"];
 // document.write(arr, "<br><br>");
 // arr.unshift("shalini", "shobha");
 // document.write(arr);
-
-
 
 // 7. concat :
 // var a = [10,20,"Rahul"];
@@ -596,8 +557,6 @@
 // let e = a.concat(a, b, c);
 // console.log(e);
 
-
-
 // // 8. Join :
 
 // var a = [10,50,"Rahul","shikha"];
@@ -605,8 +564,6 @@
 // var c = a.join(",");
 // document.write(c, "<br>");
 // document.write(typeof(c));
-
-
 
 // // 10. slice :
 
@@ -616,9 +573,6 @@
 // document.write(b +"<br><br>");
 // document.write(h);
 
-
-
-
 // // 11. Splice :
 
 // var a = ["Rahul", 50, 80, 95, 60];
@@ -627,9 +581,7 @@
 // a.splice(3, 1, "Aman", 10);
 // document.write(a + "<br><br><br>");
 
-
-
-// // 12. isArray : 
+// // 12. isArray :
 
 // var arr = [10, 50 ,40 ,"Sahil"];
 // if(Array.isArray(arr)){
@@ -638,9 +590,6 @@
 //     document.write("No, This not an array")
 // }
 
-
-
-
 // // 13. indexOf :
 
 // var b = [10, 20, 45, 30, 20, 45, 54, 45];
@@ -648,26 +597,17 @@
 // document.write(a);
 // var a = b.indexOf(search  , start);
 
-
-
-
-// // 14. lastIndexOf : 
+// // 14. lastIndexOf :
 
 // var g = ["Str", 30, 50, 45, 50, 45, 50,true];
 // var h = g.lastIndexOf(50, 5); // g.lastIndexOf(seacrh item)
 // document.write(h);
-
-
-
 
 // // 15. Includes :
 
 // var ary = ["Sagar", "Atul", "Sanjay"];
 // var h = ary.includes("Atul");
 // document.write(h + "<br><br><br><br>");
-
-
-
 
 // let ages = (age) => {   // Fat-Arrow Function (Arrow-Functions) | Function Expression
 //     return age >= 18;
@@ -685,23 +625,16 @@
 // });
 // document.write(check);
 
-
-
 // function ages(age){
 //     return age > 18;
 // }
 
-
-
-// // 17. Every : 
+// // 17. Every :
 
 // var k = [20, 50, 80];
 // document.write(k + "<br><br><br>");
 // var y = k.every(ages);
 // document.write(y);
-
-
-
 
 // // 18. Find :
 // var p = [10, 22, 55, 19, 50];
@@ -709,17 +642,11 @@
 // var l = p.find(ages);
 // document.write(l);
 
-
-
-// 19. FindIndex : 
+// 19. FindIndex :
 // let q = [10, 15, 18, 50];
 // document.write(q + "<br><br><br>");
 // var r = q.findIndex(ages);
 // document.write(r);
-
-
-
-
 
 // .filter() :
 
@@ -732,10 +659,7 @@
 //     return a % 2 == 0;
 // }
 
-
-
-
-// // 21. toString : 
+// // 21. toString :
 
 // var t = ["Rahul", 50, 48, "Sanjeev"];
 // console.log(t);
@@ -744,9 +668,6 @@
 // var str = t.toString();
 // document.write(str + "<br><br><br>");
 // document.write(typeof(str));
-
-
-
 
 // 22. .forEach() :
 
@@ -763,22 +684,16 @@
 //     document.write( i + "-" + ary[i] + "<br>");
 // }
 
-
-
-// 23. .map() - 
+// 23. .map() -
 // let arr = [10,20,30,40,50,60];
 // let b = arr.map((val, ind) => {
 //     return val + 10;
 // })
 
-
-
 // console.log(a);
 // console.log(b);
 
-
-
-// 24. .reduce() : 
+// 24. .reduce() :
 // let arr = [10,20,30,50,60,60];
 
 // let result = arr.reduce((acc, curr) => {
@@ -787,12 +702,7 @@
 
 // console.log(result);
 
-
-
-
-
-
-// Stirngs Methods - 
+// Stirngs Methods -
 
 // // 1. Length :
 // var str = "This is a JavaScript Tutorial.";
@@ -820,14 +730,12 @@
 // // 5. startsWith :
 // var str = "let's see the fifth string method";
 // var i = str.startsWith("le");
-// document.write(i + "<br>"); 
+// document.write(i + "<br>");
 
 // // 6. endsWith :
 // var str = "let's see the sixth string method!";
 // var i = str.endsWith("method");
 // document.write(i + "<br>");
-
-
 
 // // 7. search :
 // var str = "let's see the sixth string method";
@@ -859,8 +767,6 @@
 // var i = str.replace(/see/g, "move"); // (// can be used for more then one replace)
 // document.write(i + "<br>");
 
-
-
 // // 12. trim :
 // var str = "      Hello       Students";
 // var str1 = "      Hello       Students";
@@ -882,16 +788,13 @@
 // document.write(i + "<br>");
 
 // var i = String.fromCharCode(67);
-// document.write(i + "<br>"); 
+// document.write(i + "<br>");
 
 // 15. concat  :
 // var str = "I'm a student";
 // var s = " and i belong to Indore";
 // var a = str.concat(s);
 // document.write(a + "<br>");
-
-
-
 
 // // 16. split :
 // var str = "JavaScript is a intresting language";
@@ -925,102 +828,213 @@
 // document.write(str + "<br>");
 // document.write(typeof(str));
 
-
-
-
-
-
 // "DOM Targeting Methods" -
 
 // let divEle = document.getElementsByTagName("div");
 // console.log(divEle);
 
-
 // let classEle = document.getElementsByClassName("container");
 // console.log(classEle);
-
 
 // let uniqueEle = document.getElementById("cont1");
 // console.log(uniqueEle);
 
-
-
 // let tagEle = document.querySelector("div");
 // console.log(tagEle);
-
 
 // let classEle = document.querySelector(".container");
 // console.log(classEle);
 
-
 // let unqiueEle = document.querySelector("#cont3");
 // console.log(unqiueEle);
-
 
 // let unqiueEle = document.querySelectorAll("#cont");
 // console.log(unqiueEle);
 
-
 // let unqiueEle = document.querySelectorAll(".container");
 // console.log(unqiueEle);
 
-
-
 // Event Handling -
 
-function show_message(){
-    alert("Hello From JavaScript");
+function show_message() {
+  alert("Hello From JavaScript");
 }
 
-let btn = document.querySelector("#btn");
-// btn.ondblclick = show_message;
+function showMessage() {
+  let confirmation = confirm("you really wants to delete this chat!");
+  if (confirmation) {
+    alert("chat deleted successfully!");
+  } else {
+    alert("error deleting chats!");
+  }
+}
 
+// let btn = document.querySelector("#btn");
+// btn.ondblclick = show_message;
 
 // btn.addEventListener("click", () => {
 //     alert("On Click Event Triggered!");
 // })
 
-
 // btn.addEventListener("dblclick", () => {
 //     alert("On Click Event Triggered!");
 // })
-
 
 // btn.addEventListener("contextmenu", () => {
 //     alert("On Click Event Triggered!");
 // })
 
-
 // btn.addEventListener("mouseenter", () => {
 //     alert("On Click Event Triggered!");
 // })
-
 
 // btn.addEventListener("mouseleave", () => {
 //     alert("On Click Event Triggered!");
 // })
 
-
 // document.addEventListener("keypress", () => {
 //     alert("On Click Event Triggered!");
 // })
-
 
 // document.addEventListener("keyup", () => {
 //     alert("On Click Event Triggered!");
 // })
 
-
 // document.addEventListener("keydown", () => {
 //     alert("On Click Event Triggered!");
 // })
-
 
 // document.addEventListener("scroll", () => {
 //     alert("On Click Event Triggered!");
 // })
 
-
 // document.addEventListener("load", () => {
 //     alert("On Click Event Triggered!");
 // })
+
+// DOM -
+// let ele = document.querySelector(".container");
+// let ele2 = document.querySelector(".cont");
+// console.log(ele);
+
+// .get Methods -
+// innerText | textcontent
+// innerHTML
+// getAttribute
+// attributes
+// getAttributeNode
+
+// console.log(ele.innerText);
+// console.log(ele.textContent);
+// console.log(ele.innerHTML);
+
+// console.log(ele2.textContent);
+// console.log(ele2.innerHTML);
+// console.log(ele2.getAttribute("id"));
+// console.log(ele2.getAttribute("onclick"));
+// console.log(ele2.attributes[2].value);
+// console.log(ele2.getAttribute("style"));
+// console.log(ele2.getAttributeNode("style"));
+
+// set methods -
+// innerText | textContent
+// innerHTML
+// setAttribute
+// removeAttribute
+
+// let btn = document.querySelector("#btn");
+// let clickStatus = true;
+// btn.addEventListener("click", () => {
+//     // ele2.innerText = "Reveal Chats";
+//     // ele2.textContent = "Reveal Chats";
+//     // ele2.innerText = "<b><u>Reveal Chats</u></b>";
+//     // ele2.innerHTML = "<b><u>Reveal Chats</u></b>";
+//     // ele2.setAttribute("konsa attr", "kya value honi chahiye");
+//     // ele2.setAttribute("style", "background-color: pink;");
+//     // if(clickStatus){
+//     //     ele2.setAttribute("onclick", "showMessage()");
+//     //     clickStatus = !clickStatus;
+//     // }else{
+//     //     ele2.setAttribute("onclick", "show_message()");
+//     //     clickStatus = !clickStatus;
+//     // }
+//     // ele2.removeAttribute("onclick");
+// })
+
+// styling in JS DOM -
+// 1. style -
+// btn.addEventListener("dblclick", () => {
+//     btn.style.backgroundColor = "orange";
+//     btn.style.border = "1px solid black";
+//     btn.style.borderRadius = "50px";
+//     btn.style.padding = "10px";
+//     btn.style.margin = "20px 0 20px 0";
+//     btn.style.transform = "translateX(200%)";
+// })
+
+// 2. classList -
+// console.log(ele2.classList);
+// let bg_status = true;
+// btn.addEventListener("click", () => {
+  //  // .remove()
+  // console.log(ele2.classList);
+  // if(bg_status){
+  //     ele2.classList.remove("divEle");
+  //     bg_status = !bg_status;
+  // }else{
+  //  // .add()
+  //     ele2.classList.add("divEle");
+  //     bg_status = !bg_status;
+  // }
+
+  //  // .toggle()
+  // ele2.classList.toggle("divEle");
+
+
+  // // contains()
+  
+//   if (btn.classList.contains("msg_btn")) {
+//       console.log("yes! the class exists!");
+//     } else {
+//         console.log("No! the class doesn't exists!");
+//     }
+// });
+
+// let add_btn = document.querySelector("#add_btn");
+// add_btn.addEventListener("click", () => {
+//     btn.classList.add("msg_btn");
+// })
+
+
+
+
+// Ad. Traversal method -
+// let spanEle = document.querySelector("#Bhavesh");
+// console.log(spanEle);
+// console.log(spanEle.nextElementSibling);
+// console.log(spanEle.nextElementSibling.lastElementChild.previousElementSibling.outerHTML);
+// console.log(spanEle.nextElementSibling.firstElementChild.previousElementSibling.outerHTML);
+
+// let box4 = document.querySelector(".box4");
+
+// console.log(box4.parentElement.parentElement.innerHTML);
+
+// console.log(spanEle.nextElementSibling.firstElementChild);
+// console.log(spanEle.nextElementSibling.firstChild);
+
+
+
+
+let imgEle = document.createElement("img");
+console.log(imgEle);
+imgEle.setAttribute("src", "https://www.bigfootdigital.co.uk/wp-content/uploads/2020/07/image-optimisation-scaled.jpg");
+imgEle.setAttribute("width", "300");
+
+// document.append(imgEle);
+
+// document.body.append(imgEle);
+
+let box4 = document.querySelector(".box4");
+let parent = box4.parentElement;
+
+parent.insertBefore(imgEle, box4);
