@@ -1016,3 +1016,108 @@ let btn = document.getElementById("btn");
 // insertBefore method element ke kisi bhi nested element se pehele insert karega element ko
 // cont2.append(h1Ele);
 // document.querySelector(".parent").insertBefore(h1Ele, cont1);
+
+
+
+
+
+
+// Advance JavaScript - 
+// REST & SPREAD operators - 
+// Ternary Operators -
+
+// let ary = [1,2,3,4,5,6,7,8,9,10,20,50,30,90,90,50,20,1,8,20,80,30,90,2,20,545];
+// function arrIt(...arr){
+//   arr.forEach((val, ind) => {
+//     // console.log(`${ind} : ${val}`);
+//     // console.log(arr);
+//     // val < 60? console.log("yes the value is lesser than 60") : console.log("No, the value is greater than 60")
+//     console.log(`${val} - ${val < 60? "yes, it is lesser!" : "no, it is greater!"}`);
+
+
+
+//     // defualt conditional statement -
+//     // if(val < 60){
+//     //   console.log(val);
+//     // }
+//   })
+// }
+
+// arrIt(10,20,30,60,20,10,40,50,20,80,20,2,75);
+// arrIt(...[10,20,30,60,20,10,40,50,20,80,20,2,75]);
+
+
+
+
+
+// Promises in JS - 
+
+// let promState = true;
+// let prom = new Promise((res, rej) => {
+//   if(promState){
+//     res("Promises Fullfilled ho giya bhiya!");
+//   }else{
+//     rej("Promises Reject ho gya bhiya!");
+//   }
+// });
+
+// prom.then((output) => {
+//   console.log(output);
+// }).catch((errorMessage) => {
+//   console.log(errorMessage);
+// })
+
+// prom.then((result) => {
+//   console.log(result);
+// })
+
+// prom.catch((error) => {
+//   console.log(error);
+// })
+
+// console.log(typeof(prom));
+
+
+
+
+
+
+
+
+// Fetch API - 
+
+
+const API_URL = "https://jsonplaceholder.typicode.com/users";
+
+// fetch(API_ROUTE, NETWORK_OBJECT);
+
+// console.log(fetch(API_URL).then((res) => {
+//   console.log(res.json());
+// }));
+
+fetch(API_URL).then((response) => {
+  return response.json();
+}).then((data) => {
+  data.forEach((user) => {
+    let tdData1 = user.name;
+    let tdData2 = user.username;
+    let tdData3 = user.email;
+    
+    let trEle = document.createElement("tr");
+    let tdEle1 = document.createElement("td");
+    let tdEle2 = document.createElement("td");
+    let tdEle3 = document.createElement("td");
+    let tBody = document.querySelector("#table_body");
+
+    tdEle1.textContent = tdData1;
+    tdEle2.textContent = tdData2;
+    tdEle3.textContent = tdData3;
+
+    trEle.append(tdEle1);
+    trEle.append(tdEle2);
+    trEle.append(tdEle3);
+
+    tBody.append(trEle);
+  });
+})
+
