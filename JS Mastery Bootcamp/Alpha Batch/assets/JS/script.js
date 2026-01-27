@@ -884,7 +884,7 @@ let button_ele = document.getElementById("btn");
 // attributes
 // getAttributeNode
 
-let btn = document.getElementById("btn");
+// let btn = document.getElementById("btn");
 // let btn = document.querySelector("#btn");
 
 // let btn_text = btn.innerText;
@@ -1087,7 +1087,7 @@ let btn = document.getElementById("btn");
 // Fetch API - 
 
 
-const API_URL = "https://jsonplaceholder.typicode.com/users";
+// const API_URL = "https://jsonplaceholder.typicode.com/users";
 
 // fetch(API_ROUTE, NETWORK_OBJECT);
 
@@ -1095,29 +1095,101 @@ const API_URL = "https://jsonplaceholder.typicode.com/users";
 //   console.log(res.json());
 // }));
 
-fetch(API_URL).then((response) => {
-  return response.json();
-}).then((data) => {
-  data.forEach((user) => {
-    let tdData1 = user.name;
-    let tdData2 = user.username;
-    let tdData3 = user.email;
-    
-    let trEle = document.createElement("tr");
-    let tdEle1 = document.createElement("td");
-    let tdEle2 = document.createElement("td");
-    let tdEle3 = document.createElement("td");
-    let tBody = document.querySelector("#table_body");
+// fetch(API_URL).then((response) => {
+//   return response.json();
+// }).then((data) => {
+//   data.forEach((user) => {
+//     let tdData1 = user.name;
+//     let tdData2 = user.username;
+//     let tdData3 = user.email;
 
-    tdEle1.textContent = tdData1;
-    tdEle2.textContent = tdData2;
-    tdEle3.textContent = tdData3;
+//     let trEle = document.createElement("tr");
+//     let tdEle1 = document.createElement("td");
+//     let tdEle2 = document.createElement("td");
+//     let tdEle3 = document.createElement("td");
+//     let tBody = document.querySelector("#table_body");
 
-    trEle.append(tdEle1);
-    trEle.append(tdEle2);
-    trEle.append(tdEle3);
+//     tdEle1.textContent = tdData1;
+//     tdEle2.textContent = tdData2;
+//     tdEle3.textContent = tdData3;
 
-    tBody.append(trEle);
-  });
+//     trEle.append(tdEle1);
+//     trEle.append(tdEle2);
+//     trEle.append(tdEle3);
+
+//     tBody.append(trEle);
+//   });
+// })
+
+
+
+
+
+// Fetch part - 2 (The Revenge) -
+// let dataToBePosted = {
+//   userId: 201,
+//   title: "Master JavaScript in 15 days",
+//   completed: "In Progess"
+// }
+
+const API_Route = "https://jsonplaceholder.typicode.com/todos";
+
+// fetch(API_Route, {
+//   method: "POST",
+//   headers: {
+//     "Content-Type": "application/json" // "application/x-www-form-urlencoded"
+//   },
+//   body: JSON.stringify(dataToBePosted)
+// })
+// .then((response) => {
+//   return response.json();
+// })
+// .then((todos) => {
+//   console.log(todos);
+// })
+// .catch((err) => {
+//   console.log(err);
+// });
+
+// CRUD - 
+// C - Creating Data
+// R - Reading Data
+// U - Updating Data
+// D - Deleting Data
+
+
+
+
+// Async and Await - 
+
+let btn = document.querySelector("#fetch_btn");
+
+
+// btn.addEventListener("click", () => {
+//   let data = fetch(API_Route)
+//   .then((response) => {
+//     return response.json();
+//   }).then((data) => {
+//     console.log(data);
+//   });
+// });
+
+
+btn.addEventListener("click", async () => {
+  try{
+    // jo kuch bhi karwana hai, yahan karwa lijiye try bilok me!
+    let response = await fetch("https://jsonplaceholder.typicode.com/todos");
+    let data = await response.json();
+    console.log(data);
+    //  ab karta jo bhi karya sampann karna chahta wo yaha se kar sakta hai!
+  }catch(err){
+    // jo koi bhi mai ka laal error aayegi usko hum handle karenge kaha???????
+    // wahi.....jahan koi aata jata nahi!
+    // that means - 
+    console.log(err);
+  }
 })
 
+
+
+// Try and Catch Block - used to handle the errors ()

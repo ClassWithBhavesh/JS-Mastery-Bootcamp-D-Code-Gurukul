@@ -257,15 +257,11 @@
 //     document.write("<br>");
 // }
 
-
-
-
 // 5 5 5 5 5
 // 4 4 4 4
 // 3 3 3
 // 2 2
 // 1
-
 
 // for(let i = 5; i >= 1; i--){
 //     for(let j = 1; j <= i; j++){
@@ -274,14 +270,11 @@
 //     document.write("<br>");
 // }
 
-
-
 // 5 4 3 2 1
 // 5 4 3 2
 // 5 4 3
 // 5 4
 // 5
-
 
 // for(let i = 5; i >= 1; i--){
 //     let count = 5;
@@ -292,15 +285,11 @@
 //     document.write("<br>");
 // }
 
-
-
-
 //             1
 //            1  2
 //           1  2  3
 //          1  2  3  4
 //         1  2  3  4  5
-
 
 // for(let i = 1; i <= 5; i++){
 //     for(k = 5; k>i; k--){
@@ -312,11 +301,6 @@
 //     document.write("<br>");
 // }
 
-
-
-
-
-
 // functions in JS -
 
 // let num1 = 62;
@@ -325,7 +309,6 @@
 // console.log(result);
 
 // console.log(num);
-
 
 // function funcName(para1, para2, ....paraN){   // function declaration
 //         // function body
@@ -342,8 +325,6 @@
 
 // pro();    // function calling
 
-
-
 // Parametric Function -
 // function pro(num1, num2 = 54){
 //     let product = num1 * num2;
@@ -352,9 +333,6 @@
 
 // pro(2, 63);
 
-
-
-
 // function pro(a, b,c){
 //     return a * b * c;
 // }
@@ -362,17 +340,12 @@
 // let result = pro(40, 90, 10);
 // console.log(result);.
 
-
-
-
-
-// Arrays in JavaScript - 
+// Arrays in JavaScript -
 // let arr = [10,20,30,50,6,90];
 
 // for(let ind = 0; arr[ind] != undefined; ind++){
 //     console.log(arr[ind]);
 // }
-
 
 // console.log(arr[0]);
 // console.log(arr[1]);
@@ -381,14 +354,11 @@
 // console.log(arr[4]);
 // console.log(arr[5]);
 
-
-
-
 let obj = {
-    animalName: "Tiger",
-    animalAge: 50,
-    animalType: 'White'
-}
+  animalName: "Tiger",
+  animalAge: 50,
+  animalType: "White",
+};
 
 // Traditional method to iterate an object using for loop -
 // console.log(Object.keys(obj));
@@ -397,12 +367,9 @@ let obj = {
 //     console.log(Object.keys(obj)[key] + " : " + obj[Object.keys(obj)[key]]);
 // }
 
-
 // for(let key in obj){
 //     console.log(`${key} : ${obj[key]}`);
 // }
-
-
 
 // modern for loop for object iteration -
 // for(let key in obj){
@@ -412,18 +379,14 @@ let obj = {
 // console.log(obj.animalName);
 // console.log(obj.animalAge);
 
-
-
-
-// Array methods - 
+// Array methods -
 
 // // 1. .sort() :
 // var arr = ["amrit","arpit","Neha","sita","Pramod","isha"];
 // // let arr = [1,4,1,52,6,3,9,5,8,96,2];
 // document.write(arr + "<br><br>");
-// arr.sort(); 
+// arr.sort();
 // document.write(arr + "<br>");
-
 
 // // 2. .reverse() :
 
@@ -433,17 +396,12 @@ let obj = {
 // ary.sort().reverse();
 // document.write(ary);
 
-
 // // 3. Pop :
 
 // var arr = ["arpit", "shikha", "aman", "priya"];
 // document.write(arr +"<br><br>");
 // arr.pop();
 // document.write(arr);
-
-
-
-
 
 // // 4. Push :
 
@@ -454,8 +412,6 @@ let obj = {
 // document.write(arr);
 // console.log(arr, "<br><br>");
 
-
-
 // // 5. shift :
 
 // var arr = ["arpit", "shikha", "aman", "priya"];
@@ -464,17 +420,12 @@ let obj = {
 // arr.shift();
 // document.write(arr);
 
-
-
-
 // // 6. unShift :
 
 // var arr = ["arpit", "shikha", "aman", "priya"];
 // document.write(arr, "<br><br>");
 // arr.unshift("shalini", "shobha");
 // document.write(arr);
-
-
 
 // 7. concat :
 // var a = [10,20,"Rahul"];
@@ -489,8 +440,6 @@ let obj = {
 // let e = a.concat(a, b, c);
 // console.log(e);
 
-
-
 // // 8. Join :
 
 // var a = [10,50,"Rahul","shikha"];
@@ -498,10 +447,6 @@ let obj = {
 // var c = a.join(" ");
 // document.write(c);
 // console.log(typeof(c));
-
-
-
-
 
 // // 9. slice :
 
@@ -512,7 +457,6 @@ let obj = {
 // document.write(b +"<br><br>");
 // document.write(h);
 
-
 // // 10. Splice :
 
 // var a = ["Rahul", 50, 80, 95, 60];
@@ -521,10 +465,7 @@ let obj = {
 // a.splice(2, 0, "Aman", 10);
 // document.write(a + "<br><br><br>");
 
-
-
-
-// // 12. isArray : 
+// // 12. isArray :
 
 // var arr = [10, 50 ,40 ,"Sahil"];
 
@@ -535,9 +476,6 @@ let obj = {
 //     document.write("No, This not an array")
 // }
 
-
-
-
 // // 13. indexOf :
 
 // var b = [10, 20, 45, 30, 20, 45, 54, 20, 45];
@@ -545,25 +483,17 @@ let obj = {
 // document.write(a);
 // var a = b.indexOf(search  , start);
 
-
-
-// // 14. lastIndexOf : 
+// // 14. lastIndexOf :
 
 // var g = ["Str", 30, 50, 45, 50, 45, 50,true];
 // var h = g.lastIndexOf(50, 3); // g.lastIndexOf(seacrh item)
 // document.write(h);
-
-
-
 
 // // 15. Includes :
 
 // var ary = ["Sagar", "Atul", "Sanjay"];
 // var h = ary.includes("Sagar", "Atul");
 // document.write(h + "<br><br><br><br>");
-
-
-
 
 // // 16. Some :
 // var age = [10, 50, 18];
@@ -582,37 +512,24 @@ let obj = {
 // var check = age.some(ages);
 // document.write(check + "<br><br>");
 
-
-
 // function ages (age){
 //     return age >= 18;
 // }
-
 
 // function ages(n){
 //     return n > 18;
 // }
 
-
 // function (num){
 //     return num > 18;
 // }
 
-
-
-
-
-// // 16. Every : 
+// // 16. Every :
 
 // var k = [20, 50, 80];
 // document.write(k + "<br><br><br>");
 // var y = k.every(ages);
 // document.write(y);
-
-
-
-
-
 
 // // 18. Find :
 // var p = [10, 2, 55, 19, 50];
@@ -624,7 +541,7 @@ let obj = {
 //     return p >= 20;
 // }
 
-// 19. FindIndex : 
+// 19. FindIndex :
 // let q = [10, 15, 14, 50];
 // document.write(q + "<br><br><br>");
 // var r = q.findIndex(ages);
@@ -633,9 +550,6 @@ let obj = {
 // function ages(q){
 //     return q >= 18;
 // }
-
-
-
 
 // // 20. Filter :
 
@@ -650,10 +564,7 @@ let obj = {
 //     return a >= 40
 // }
 
-
-
-
-// // 21. toString : 
+// // 21. toString :
 
 // var t = ["Rahul", 50, 48, "Sanjeev"];
 // console.log(t);
@@ -662,8 +573,7 @@ let obj = {
 // document.write(str);
 // console.log(typeof(str));
 
-
-// forEach - 
+// forEach -
 // // 22. Array forEach Loop :
 
 // let ary = ["Neha", 50, true, "Saddam"];
@@ -681,9 +591,7 @@ let obj = {
 //     document.write( i + "-" + ary[i] + "<br>");
 // }
 
-
-
-// 23. .map() : 
+// 23. .map() :
 
 // let ab = ary.map((value, ind) => {
 //     return value + 10;
@@ -691,9 +599,7 @@ let obj = {
 
 // document.write(ab);
 
-
-
-// 24. .reduce() : 
+// 24. .reduce() :
 // let arr = [40,50,80,20,90,30,];
 // // document.write(arr);
 // let result = arr.reduce((acc, curr) => {
@@ -702,16 +608,6 @@ let obj = {
 
 // document.write(result);
 
-
-
-
-
-
-
-
-
-
-
 // String Methods -
 
 // // 1. Length :
@@ -719,16 +615,11 @@ let obj = {
 // var l = str.length;
 // document.write(l + "<br><br>");
 
-
-
 // // 2. toLowerCase :
 // var str = "Let's See the SECOND String Method";
 // document.write(str + "<br><br>");
 // var l = str.toLowerCase();
 // document.write(l + "<br><br>");
-
-
-
 
 // // 3. toUpperCase :
 // var str = "let's see the third string method";
@@ -736,40 +627,25 @@ let obj = {
 // var u = str.toUpperCase();
 // document.write(u + "<br>");
 
-
-
-
 // // 4. includes :
 // var str = "let's see the fourth string method";
 // var i = str.includes("let's see");
 // document.write(i + "<br>");
 
-
-
-
 // // 5. startsWith :
 // var str = "let's see the fifth string method";
 // var i = str.startsWith("let's");
-// document.write(i + "<br>"); 
-
-
-
+// document.write(i + "<br>");
 
 // // 6. endsWith :
 // var str = "let's see the sixth string method!";
 // var i = str.endsWith("method");
 // document.write(i + "<br>");
 
-
-
-
 // // 7. search :
 // var str = "let's see the sixth string method";
 // var i = str.search("string");
 // document.write(i + "<br>");
-
-
-
 
 // // 8. match :
 // var str = "let's see the eigth string method";
@@ -780,24 +656,15 @@ let obj = {
 // console.log(typeof(i));
 // console.log(i);
 
-
-
-
 // // 9. indexOf :
 // var str = "let's see the ninth string method";
 // var i = str.indexOf("s", 9);
 // document.write(i + "<br>");
 
-
-
-
 // // 10. lastIndexOf :
 // var str = "let's see the ninth string method";
 // var i = str.lastIndexOf("h");
 // document.write(i + "<br>");
-
-
-
 
 // // 11. replace :
 // var str = "let's see the ninth see string see method see";
@@ -805,9 +672,6 @@ let obj = {
 // // var i = str.replace("see", "move"); // (// can be used for more then one replace)
 // var i = str.replace(/see/g, "move"); // (// can be used for more then one replace)
 // document.write(i + "<br>");
-
-
-
 
 // // 12. trim :
 // var str = "      Hello       Students";
@@ -817,31 +681,18 @@ let obj = {
 // var a = str.trim();
 // console.log(a);
 
-
-
-
 // // 13. charAt :
 // var str = "let's see the ninth string method";
 // var i = str.charAt(12);
 // document.write(i + "<br>");
-
-
-
 
 // // 14. charCodeAt :
 // var str = "let's see the ninth string method";
 // var i = str.charCodeAt(3);
 // document.write(i + "<br>");
 
-
-
-
 // var i = String.fromCharCode(65,66,67,68,69);
-// document.write(i + "<br>"); 
-
-
-
-
+// document.write(i + "<br>");
 
 // 15. concat  :
 // var str = "I'm a student";
@@ -849,24 +700,16 @@ let obj = {
 // var a = str.concat(s);
 // document.write(a + "<br>");
 
-
-
-
 // // 16. split :
 // var str = "JavaScript is a intresting language";
 // var a = str.split("");
 // document.write(a + "<br>");
 // document.write(typeof(a));
 
-
-
-
 // // 17. repeat :
 // var str = "JavaScript is a intresting language";
 // var a = str.repeat(3);
 // document.write(a + "<br>");
-
-
 
 // // 18. slice :
 // var str = "JavaScript is a intresting language";
@@ -874,27 +717,19 @@ let obj = {
 // var a = str.slice(-10, 20);
 // document.write(a + "<br>");
 
-
 // let ar  = [10,20,30,60,90,41];
 // let newSlice = ar.slice(-5, 5)
 // document.write(newSlice);
-
 
 // // 19. substr :
 // var str = "JavaScript is a intresting language";
 // var a = str.substr(3,6);
 // document.write(a + "<br>");
 
-
-
-
 // // 20. substring :
 // var str = "JavaScript is a intresting language";
 // var a = str.substring(3,6);
 // document.write(a + "<br>");
-
-
-
 
 // // 21. toString :
 // var st = 25014;
@@ -902,12 +737,7 @@ let obj = {
 // document.write(str + "<br>");
 // document.write(typeof(str));
 
-
-
-
-
-
-// Event handlers - 
+// Event handlers -
 
 // let divEle = document.getElementsByTagName("div");
 // console.log(divEle);
@@ -917,8 +747,6 @@ let obj = {
 
 // let uniqueEle = document.getElementById("cont");
 // console.log(uniqueEle);
-
-
 
 // querySelector & querySelectorAll
 
@@ -930,11 +758,6 @@ let obj = {
 
 // let ele = document.querySelector("#cont3");
 // console.log(ele);
-
-
-
-
-
 
 // function showMessage(){
 //     alert("Hello From JavaScript!");
@@ -952,9 +775,7 @@ let obj = {
 // let btn_ele = document.querySelector("#btn");
 // console.log(btn_ele);
 
-
 // btn_ele.onclick = showMessage; deprecated due the performance lack in huge scale application
-
 
 // btn_ele.addEventListener("click", () => {
 //     alert("Hello From JavaScript!");
@@ -966,55 +787,39 @@ let obj = {
 //     alert("Double Click Event!");
 // })
 
-
 // btn_ele.addEventListener("contextmenu", () => {
 //     alert("context menu Event! (Right kilik wala!)");
 // })
-
 
 // btn_ele.addEventListener("mouseenter", () => {
 //     alert("context menu Event! (Right kilik wala!)");
 // })
 
-
-
 // btn_ele.addEventListener("mouseleave", () => {
 //     alert("context menu Event! (Right kilik wala!)");
 // })
-
 
 // btn_ele.addEventListener("keypress", () => {
 //     alert("context menu Event! (Right kilik wala!)");
 // })
 
-
 // document.addEventListener("keypress", () => {
 //     alert("You pressed some keys!");
 // })
-
-
 
 // document.addEventListener("keyup", () => {
 //     alert("You pressed some keys!");
 // })
 
-
-
 // document.addEventListener("keydown", () => {
 //     alert("You pressed some keys!");
 // })
-
-
 
 // document.addEventListener("scroll", () => {
 //     alert("You pressed some keys!");
 // })
 
-
-
-
-
-// DOM Manipulation - 
+// DOM Manipulation -
 // get methods -
 // 1. innerText | textContent
 // 2. innerHTML
@@ -1022,10 +827,8 @@ let obj = {
 // 4. attributes
 // 5. getAttributeNode
 
-
 // let divEle = document.getElementsByTagName("div");
 // let divEle = document.querySelector("div");
-
 
 // let div1 = document.querySelector(".div1");
 // let div3 = document.querySelector(".div3");
@@ -1043,10 +846,6 @@ let obj = {
 
 // console.log(div3.getAttributeNode("style"));
 
-
-
-
-
 // set methods -
 // 1. innerText | textContent
 // 2. innerHTML
@@ -1058,7 +857,6 @@ let obj = {
 
 // div1Text = "Div1 Element";
 // console.log(div1Text)
-
 
 // let divInnerHTML = div1.innerHTML;
 // console.log(divInnerHTML);
@@ -1090,21 +888,13 @@ let obj = {
 //     div1.removeAttribute("onclick");
 // })
 
-
-
-
-
 // Style using DOM Manipulation
 // 1. style
 // 2. classList
 // 3. className
 
-
-
-
 // let rem_btn = document.querySelector("#rem_btn");
 // let btn = document.querySelector("#btn");
-
 
 // btn.addEventListener("click", () => {
 //     rem_btn.style.padding = "10px";
@@ -1127,24 +917,14 @@ let obj = {
 //     }
 // })
 
-
 // btn.addEventListener("click", () => {
 //     div1.classList.toggle("divElement");
 // })
 
-
-
-
-
-
 // contains - true | false
-
 
 // let check = div1.classList.contains("container");
 // console.log(check);
-
-
-
 
 // btn.addEventListener("click", () => {
 //     if(div3.classList.contains("divElement")){
@@ -1154,24 +934,17 @@ let obj = {
 //     }
 // })
 
-
-
-// className - 
+// className -
 // let div2 = document.querySelector(".div2");
 
 // console.log(div2.className);
 
-
 // div2.className = "div2 container";
 // console.log(div2.className);
-
-
-
 
 // box1 = document.querySelector(".box1");
 // // console.log(box1.lastElementChild.previousElementSibling.lastElementChild.previousElementSibling);
 // let item3 = box1.lastElementChild.previousElementSibling.lastElementChild.previousElementSibling;
-
 
 // console.log(item3.previousElementSibling.textContent);
 // console.log(item3.nextElementSibling.textContent);
@@ -1179,11 +952,7 @@ let obj = {
 
 // console.log(document.querySelector("#root").parentNode);
 
-
-
-
-
-// creating HTML elements using JS DOM - 
+// creating HTML elements using JS DOM -
 
 // let anchorEle = document.createElement("a");
 // // console.log(anchorEle);
@@ -1196,3 +965,156 @@ let obj = {
 // let box1 = document.querySelector(".box1");
 // let box2 = document.querySelector(".box2");
 // document.querySelector(".parent").insertBefore(anchorEle, box2);
+
+// Ad. JavaScript -
+// Rest Operator -
+// Sprea Operator -
+// Ternary Operator -
+
+// let arr = [10,2,30,50,60,650,48];
+
+// function arrIt(...ary){
+//     ary.forEach((element) => {
+//         console.log(element);
+//     });
+// }
+
+// // arrIt(arr);
+// arrIt(10,20,30,50,20,60,50,2,77,889,99);
+
+// function arrIt(...ary){
+//     ary.forEach((element) => {
+//         // ternary operator -
+//         console.log(`${element} - ${element > 50? "yes the value is greater than 50" : "No, the value is lesser than 50"}`);
+
+//         // condtional statements
+//         // if(element > 50){
+//         //     console.log(element);
+//         // }
+//     });
+// }
+
+// arrIt(10,20,30,50,20,60,50,2,77,889,99);
+
+// arrIt(arr);
+// arrIt([...arr, userDOB]);
+
+// Destructuring of array and objects -
+// let userInfo = ["Rahul Gandhi", 58, "10/01/1969", "Male"];
+
+// // modern method to target specific element from array -
+// let [userName, userAge, userDOB, userGender] = userInfo;
+// console.log(userName);
+// console.log(userAge);
+// console.log(userDOB);
+// console.log(userGender);
+
+// traditional method to assign a element to any variable -
+// let userName = userInfo[0];
+// let userAge = userInfo[1];
+// let userDOB = userInfo[2];
+
+// console.log(userName);
+// console.log(userAge);
+// console.log(userDOB);
+
+// let oppNeta = {
+//     netaName: ["Rahul Gandhi", "Digvijay Singh", "Jyotirajsingh Sindhiya", "Priyanka Gandhi"],
+//     netaParty: ["INC", "INC", "BJP", "INC"],
+//     netaVote: [15, 20, 115, 5],
+//     eleResult: "INC Won the Election"
+// };
+
+// let {netaName, netaParty, netaVote, eleResult = "BJP Won the election"} = oppNeta;
+// console.log(netaName);
+// console.log(netaParty);
+// console.log(netaVote);
+// console.log(eleResult);
+
+// let [neta1, neta2, neta3, neta4] = netaName;
+// console.log(neta1);
+// console.log(neta2);
+// console.log(neta3);
+// console.log(neta4);
+
+// Promises -
+
+// let promState = false;
+// let shadiProm = new Promise((result, reject) => {
+//     if(promState){
+//         result("Arpita ne Shaid ne khub zoro shoro se danas kiya!");
+//     }else{
+//         reject("Arpita ne danas nahi kiya!");
+//     }
+// });
+
+// shadiProm.then((result) => {
+//     console.log(result);
+// }).catch((warn) => {
+//     console.log(warn);
+// })
+
+// shadiProm.then((message) => {
+//     console.log(message);
+// })
+
+// shadiProm.catch((error) => {
+//     console.log(error);
+// })
+
+// console.log(shadiProm);
+
+// Fetch (API_URL, NETWORK OBJECT);
+
+// let dataToBePosted = {
+//     userId: 201,
+//     title: "Master JS In Just 15 Days!",
+//     completed: false
+// }
+
+const API_URL = "https://jsonplaceholder.typicode.com/todos";
+
+// fetch(API_URL, {
+//     method: "POST",
+//     headers: {
+//         "Content-Type": "application/json" // x-www-form-urlencoded
+//     },
+//     body: JSON.stringify(dataToBePosted)
+// }).then((response) => {
+//     return response.json();
+// }).then((data) => {
+//     console.log(data);
+// });
+
+// Async - Await in JS -
+
+// let message = async () => {
+//   fetch(API_URL)
+//     .then((response) => {
+//       return response.json();
+//     })
+//     .then((data) => {
+//       console.log(data);
+//     }).catch((error) => {
+//         console.log(error);
+//     })
+// };
+
+// message();
+
+// try / catch -
+let btn = document.querySelector("#fetch_btn");
+
+btn.addEventListener("click", async () => {
+  try {
+    let response = await fetch("https://jsonplaceholder.typicode.com/todo");
+    let data = await response.json();
+    console.log(data);
+  } catch (err) {
+    console.log(err);
+  }
+});
+
+
+
+

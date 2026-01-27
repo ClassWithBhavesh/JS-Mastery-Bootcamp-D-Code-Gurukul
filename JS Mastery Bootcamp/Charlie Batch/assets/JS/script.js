@@ -1025,16 +1025,193 @@ function showMessage() {
 
 
 
-let imgEle = document.createElement("img");
-console.log(imgEle);
-imgEle.setAttribute("src", "https://www.bigfootdigital.co.uk/wp-content/uploads/2020/07/image-optimisation-scaled.jpg");
-imgEle.setAttribute("width", "300");
+// let imgEle = document.createElement("img");
+// console.log(imgEle);
+// imgEle.setAttribute("src", "https://www.bigfootdigital.co.uk/wp-content/uploads/2020/07/image-optimisation-scaled.jpg");
+// imgEle.setAttribute("width", "300");
 
-// document.append(imgEle);
+// // document.append(imgEle);
 
-// document.body.append(imgEle);
+// // document.body.append(imgEle);
 
-let box4 = document.querySelector(".box4");
-let parent = box4.parentElement;
+// let box4 = document.querySelector(".box4");
+// let parent = box4.parentElement;
 
-parent.insertBefore(imgEle, box4);
+// parent.insertBefore(imgEle, box4);
+
+
+
+
+
+
+// Ad. JavaScript - 
+//  REST & SPREAD operators
+//  Ternary Operators
+
+
+// let arr = [10,20,30,60,50,40,80,44];
+
+// // REST Operator -
+// function arrIter(...ary){
+//   ary.forEach((ele) => {
+//     console.log(`${ele} - ${ele > 40? "yes, it is greater!" : "No, it is lesser than 40"}`);
+//     // if(ele > 40){
+//     //   console.log(ele, " - is greater than 40");
+//     // }else{
+//     //   console.log(ele, " - is lesser than 40");
+//     // }
+//   })
+// }
+
+// arrIter(20,50,3,60,10,96,405,45,8,6,6,9);
+
+
+
+// SPREAD Operator - 
+// function arrIter(ary){
+//   ary.forEach((ele) => {
+//     console.log(ele);
+//   })
+// }
+
+// arrIter([...arr, adhaarNo, userDOB]);
+
+
+
+
+
+
+
+
+
+// De-Structuring of array and objects - 
+
+let userInfo = ["Uddhav Chourasiya", 21, 7.5, "Male"];
+
+let [userName, userAge, userGrade, userGender] = userInfo;
+
+
+// let userName = userInfo[0];
+// let userAge = userInfo[1];
+// let userGrade = userInfo[2];
+// let userGender = userInfo[3];
+
+// console.log(userName);
+// console.log(userAge);
+// console.log(userGrade);
+// console.log(userGender);
+
+
+
+
+// let netaObj = {
+//   netaName: ["Rahul Gandhi", "Digvijay Singh", "Amit Shah", "Nitin Gadkare", "Yogi Ji"],
+//   netaParty: ["INC", "INC", "BJP", "BJP", "BJP"],
+//   netaSeat: [10,2,50,60,100],
+//   eleResult: "BJP WON THE ELECTION!"
+// }
+
+// let {netaName, netaParty, netaSeat, eleResult = "INC Won the election"} = netaObj;
+// let [neta1, neta2, neta3, neta4, neta5] = netaName;
+// console.log(netaName);
+// console.log(netaParty);
+// console.log(netaSeat);
+// console.log(eleResult);
+
+
+
+
+// console.log(neta1);
+// console.log(neta2);
+// console.log(neta3);
+// console.log(neta4);
+// console.log(neta5);
+
+
+
+
+
+
+
+
+// PROMISES in JS - 
+// let promState = false;
+// let meetProm = new Promise((result, reject) => {
+//   if(promState){
+//     result("Manish bhai milne aa gaye!");
+//   }else{
+//     reject("Manish bhai bewafa nikle!");
+//   }
+// });
+
+// modern method to handle the promises (Recommended)
+// meetProm.then((res) => {
+//   console.log(res);
+// }).catch((err) => {
+//   console.log(err);
+// })
+
+
+
+// traditional method to handle promises (not recommended)
+// meetProm.then((message) => {
+//   console.log(message);
+// })
+
+// meetProm.catch((error) => {
+//   console.log(error);
+// })
+
+
+
+// console.log(meetProm);
+
+
+
+
+
+
+
+
+
+// Fetch - 
+
+// fetch(API_URL, NETWORK_OBJECT);
+
+const API_URL = "https://jsonplaceholder.typicode.com/users";
+// console.log(fetch(API_URL));
+fetch(API_URL).then((response) => {
+  return response.json();
+}).then((users) => {
+  console.log(users);
+  users.forEach((user) => {
+    // console.log(user);
+    let tBody = document.querySelector("#tableBody");
+    let trEle = document.createElement("tr");
+    let tdEle1 = document.createElement("td");
+    let tdEle2 = document.createElement("td");
+    let tdEle3 = document.createElement("td");
+    let tdEle4 = document.createElement("td");
+    let tdEle5 = document.createElement("td");
+
+    let tdData1 = user.name;
+    let tdData2 = user.username;
+    let tdData3 = user.email;
+    let tdData4 = user.phone;
+    let tdData5 = user.website;
+
+    tdEle1.textContent = tdData1;
+    tdEle2.textContent = tdData2;
+    tdEle3.textContent = tdData3;
+    tdEle4.textContent = tdData4;
+    tdEle5.textContent = tdData5;
+
+    trEle.append(tdEle1);
+    trEle.append(tdEle2);
+    trEle.append(tdEle3);
+    trEle.append(tdEle4);
+    trEle.append(tdEle5);
+
+    tBody.append(trEle);
+  });
+})
