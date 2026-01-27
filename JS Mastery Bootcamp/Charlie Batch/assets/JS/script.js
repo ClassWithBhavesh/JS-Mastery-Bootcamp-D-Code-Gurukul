@@ -976,23 +976,22 @@ function showMessage() {
 // console.log(ele2.classList);
 // let bg_status = true;
 // btn.addEventListener("click", () => {
-  //  // .remove()
-  // console.log(ele2.classList);
-  // if(bg_status){
-  //     ele2.classList.remove("divEle");
-  //     bg_status = !bg_status;
-  // }else{
-  //  // .add()
-  //     ele2.classList.add("divEle");
-  //     bg_status = !bg_status;
-  // }
+//  // .remove()
+// console.log(ele2.classList);
+// if(bg_status){
+//     ele2.classList.remove("divEle");
+//     bg_status = !bg_status;
+// }else{
+//  // .add()
+//     ele2.classList.add("divEle");
+//     bg_status = !bg_status;
+// }
 
-  //  // .toggle()
-  // ele2.classList.toggle("divEle");
+//  // .toggle()
+// ele2.classList.toggle("divEle");
 
+// // contains()
 
-  // // contains()
-  
 //   if (btn.classList.contains("msg_btn")) {
 //       console.log("yes! the class exists!");
 //     } else {
@@ -1004,9 +1003,6 @@ function showMessage() {
 // add_btn.addEventListener("click", () => {
 //     btn.classList.add("msg_btn");
 // })
-
-
-
 
 // Ad. Traversal method -
 // let spanEle = document.querySelector("#Bhavesh");
@@ -1022,9 +1018,6 @@ function showMessage() {
 // console.log(spanEle.nextElementSibling.firstElementChild);
 // console.log(spanEle.nextElementSibling.firstChild);
 
-
-
-
 // let imgEle = document.createElement("img");
 // console.log(imgEle);
 // imgEle.setAttribute("src", "https://www.bigfootdigital.co.uk/wp-content/uploads/2020/07/image-optimisation-scaled.jpg");
@@ -1039,15 +1032,9 @@ function showMessage() {
 
 // parent.insertBefore(imgEle, box4);
 
-
-
-
-
-
-// Ad. JavaScript - 
+// Ad. JavaScript -
 //  REST & SPREAD operators
 //  Ternary Operators
-
 
 // let arr = [10,20,30,60,50,40,80,44];
 
@@ -1065,9 +1052,7 @@ function showMessage() {
 
 // arrIter(20,50,3,60,10,96,405,45,8,6,6,9);
 
-
-
-// SPREAD Operator - 
+// SPREAD Operator -
 // function arrIter(ary){
 //   ary.forEach((ele) => {
 //     console.log(ele);
@@ -1076,20 +1061,11 @@ function showMessage() {
 
 // arrIter([...arr, adhaarNo, userDOB]);
 
-
-
-
-
-
-
-
-
-// De-Structuring of array and objects - 
+// De-Structuring of array and objects -
 
 let userInfo = ["Uddhav Chourasiya", 21, 7.5, "Male"];
 
 let [userName, userAge, userGrade, userGender] = userInfo;
-
 
 // let userName = userInfo[0];
 // let userAge = userInfo[1];
@@ -1100,9 +1076,6 @@ let [userName, userAge, userGrade, userGender] = userInfo;
 // console.log(userAge);
 // console.log(userGrade);
 // console.log(userGender);
-
-
-
 
 // let netaObj = {
 //   netaName: ["Rahul Gandhi", "Digvijay Singh", "Amit Shah", "Nitin Gadkare", "Yogi Ji"],
@@ -1118,23 +1091,13 @@ let [userName, userAge, userGrade, userGender] = userInfo;
 // console.log(netaSeat);
 // console.log(eleResult);
 
-
-
-
 // console.log(neta1);
 // console.log(neta2);
 // console.log(neta3);
 // console.log(neta4);
 // console.log(neta5);
 
-
-
-
-
-
-
-
-// PROMISES in JS - 
+// PROMISES in JS -
 // let promState = false;
 // let meetProm = new Promise((result, reject) => {
 //   if(promState){
@@ -1151,8 +1114,6 @@ let [userName, userAge, userGrade, userGender] = userInfo;
 //   console.log(err);
 // })
 
-
-
 // traditional method to handle promises (not recommended)
 // meetProm.then((message) => {
 //   console.log(message);
@@ -1162,56 +1123,111 @@ let [userName, userAge, userGrade, userGender] = userInfo;
 //   console.log(error);
 // })
 
-
-
 // console.log(meetProm);
 
-
-
-
-
-
-
-
-
-// Fetch - 
+// Fetch -
 
 // fetch(API_URL, NETWORK_OBJECT);
 
-const API_URL = "https://jsonplaceholder.typicode.com/users";
-// console.log(fetch(API_URL));
-fetch(API_URL).then((response) => {
-  return response.json();
-}).then((users) => {
-  console.log(users);
-  users.forEach((user) => {
-    // console.log(user);
-    let tBody = document.querySelector("#tableBody");
-    let trEle = document.createElement("tr");
-    let tdEle1 = document.createElement("td");
-    let tdEle2 = document.createElement("td");
-    let tdEle3 = document.createElement("td");
-    let tdEle4 = document.createElement("td");
-    let tdEle5 = document.createElement("td");
+// const API_URL = "https://jsonplaceholder.typicode.com/users";
+// // console.log(fetch(API_URL));
+// fetch(API_URL).then((response) => {
+//   return response.json();
+// }).then((users) => {
+//   console.log(users);
+//   users.forEach((user) => {
+//     // console.log(user);
+//     let tBody = document.querySelector("#tableBody");
+//     let trEle = document.createElement("tr");
+//     let tdEle1 = document.createElement("td");
+//     let tdEle2 = document.createElement("td");
+//     let tdEle3 = document.createElement("td");
+//     let tdEle4 = document.createElement("td");
+//     let tdEle5 = document.createElement("td");
 
-    let tdData1 = user.name;
-    let tdData2 = user.username;
-    let tdData3 = user.email;
-    let tdData4 = user.phone;
-    let tdData5 = user.website;
+//     let tdData1 = user.name;
+//     let tdData2 = user.username;
+//     let tdData3 = user.email;
+//     let tdData4 = user.phone;
+//     let tdData5 = user.website;
 
-    tdEle1.textContent = tdData1;
-    tdEle2.textContent = tdData2;
-    tdEle3.textContent = tdData3;
-    tdEle4.textContent = tdData4;
-    tdEle5.textContent = tdData5;
+//     tdEle1.textContent = tdData1;
+//     tdEle2.textContent = tdData2;
+//     tdEle3.textContent = tdData3;
+//     tdEle4.textContent = tdData4;
+//     tdEle5.textContent = tdData5;
 
-    trEle.append(tdEle1);
-    trEle.append(tdEle2);
-    trEle.append(tdEle3);
-    trEle.append(tdEle4);
-    trEle.append(tdEle5);
+//     trEle.append(tdEle1);
+//     trEle.append(tdEle2);
+//     trEle.append(tdEle3);
+//     trEle.append(tdEle4);
+//     trEle.append(tdEle5);
 
-    tBody.append(trEle);
-  });
-})
+//     tBody.append(trEle);
+//   });
+// })
+
+const API_Origin = "https://jsonplaceholder.typicode.com/album";
+
+// let dataToBePosted = {
+//   userId: "101",
+//   title: "Js Mastery Bootcamp"
+// }
+
+// fetch(API_Origin, {
+//   method: "POST",
+//   headers: {
+//     "Content-Type": "application/json" // application/x-www-form-urlencoded
+//   },
+//   body: JSON.stringify(dataToBePosted)
+// }).then((data) => {
+//   return data.json();
+// }).then((response) => {
+//   console.log(response);
+// }).catch((err) => {
+//   console.log(err);
+// })
+
+// async & await -
+
+// let message = async () => {
+//   console.log("Hello From JS!");
+// }
+
+// console.log(message().then(() => {
+//   console.log("promises handled successfully!");
+// }).then(() => {
+//   console.log("second promise resolved!");
+// }));
+
+// message();
+
+// Real life application -
+
+// let fetch_btn = document.querySelector("#fetch_btn");
+
+// fetch_btn.addEventListener("click", async() => {
+//   // fetch(API_Origin).then((response) => {
+//   //   return response.json();
+//   // }).then((data) => {
+//   //   console.log(data);
+//   // });
+
+//   let response = await fetch(API_Origin);
+//   let data = await response.json();
+//   console.log(data);
+// })
+
+// Try & Catch block - [Error Handling]
+
+let fetch_btn = document.querySelector("#fetch_btn");
+
+fetch_btn.addEventListener("click", async () => {
+  try {
+    let response = await fetch(API_Origin);
+    let data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.log(error);
+  }
+});
